@@ -542,6 +542,7 @@ input:-webkit-autofill
 
 .coin-grid {
   margin-left: 21px;
+  height: 600px;
 }
 .chart-paper {
   margin-top: 25px;
@@ -555,10 +556,13 @@ input:-webkit-autofill
   
 }
 .tech-grid {
-  height: 350px;
+  height: auto;
 }
 .tech-row {
-  margin-bottom:20px;
+  /* margin-bottom:20px; */
+  /* margin-top: auto;
+  margin-bottom: 20px; */
+  margin-top: -50px;
 }
 .tech-selector {
   border: 3px solid #ffab00;
@@ -569,6 +573,10 @@ input:-webkit-autofill
   height: 70px;
 }
 
+.afili-link {
+  font-size: 14;
+  color: #ffab00;
+}
 
 
 
@@ -582,6 +590,16 @@ input:-webkit-autofill
 
 
   @media all and (min-width:800px){
+    .tech-row {
+      /* margin-bottom:20px; */
+      /* margin-top: auto;
+      margin-bottom: 20px; */
+      margin-top: 0px;
+    }
+    .afili-link {
+      font-size: 16;
+      color: #ffab00;
+    }
     .tech-grid {
       height: 410px;
     }
@@ -610,6 +628,7 @@ input:-webkit-autofill
     }
     .coin-grid {
       margin-left: 33px;
+      height: 500px;
     }
     .asset-grid {
       margin-left: 0px
@@ -622,8 +641,8 @@ input:-webkit-autofill
       width: 70%;
     }
     .depo-modal {
+      margin: 40px;
       width: 60%;
-      
     }
     .appbar-login {
       min-height: 50px;

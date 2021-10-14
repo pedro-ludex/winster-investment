@@ -732,7 +732,7 @@ canvasClassName='particle-canvas'
                     .catch((err)=>{
                       console.log(err.response)
                       //console.log('wahala')
-                     if(err.response.data=='mongo wahala'){
+                     if(err){
                       alert('Unnable to connect to the server please try again later')
                       setLoading({
                         pending:false,

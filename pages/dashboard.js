@@ -1,78 +1,66 @@
 import React,{useState,useRef,useEffect,} from 'react';
-import PropTypes from 'prop-types';
+
 import AppBar from '@material-ui/core/AppBar';
-import CssBaseline from '@material-ui/core/CssBaseline';
+
 import Check from '@material-ui/icons/CheckTwoTone'
 //import Drawer from '@material-ui/core/Drawer';
-import Hidden from '@material-ui/core/Hidden';
+
 import IconButton from '@material-ui/core/IconButton';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import MailIcon from '@material-ui/icons/MailOutline';
+
 import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+
 import "@material/react-drawer/dist/drawer.css";
-import Appbar from '@material-ui/core/AppBar'
-//import '@material/react-drawer/index.scss';
-import {Row,Container,Col} from 'reactstrap'
+
 import Grid from '@material-ui/core/Grid'
 import TopAppBar, {TopAppBarFixedAdjust} from '@material/react-top-app-bar';
 import {motion} from 'framer-motion'
-import PersonOutline from '@material-ui/icons/PersonOutline'
+
 import PeopleOutline from '@material-ui/icons/People'
 import Payment from '@material-ui/icons/PaymentOutlined'
-import Notification from '@material-ui/icons/NotificationImportantOutlined'
+
 import Poll from '@material-ui/icons/PollOutlined'
-import AccountBallanceIcon from '@material-ui/icons/AccountBalanceWalletOutlined'
+
 import Account from '@material-ui/icons/AccountBalanceOutlined'
 import AttachMoney from '@material-ui/icons/AttachMoneyOutlined'
 import Paper from '@material-ui/core/Paper'
-import {Card} from 'reactstrap'
+
 import Button from '@material-ui/core/IconButton'
 import ExitToAppIcon from '@material-ui/icons/ExitToAppOutlined'
-import CreditCardIcon from '@material-ui/icons/CreditCardOutlined'
+
 import LocalAtmIcon from '@material-ui/icons/LocalAtmOutlined'
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 import BarChartIcon from '@material-ui/icons/BarChart'
-import { Chart } from "react-google-charts";
+
 import Image from 'next/image'
 import { ResponsivePieCanvas } from '@nivo/pie'
 import Drawer, {
     DrawerHeader,
-    DrawerSubtitle,
+   
     DrawerAppContent,
-    DrawerTitle,
+  
     DrawerContent,
   } from '@material/react-drawer';
   import "@material/react-drawer/dist/drawer.css";
-  import Guage from '../components/guage'
-  import Avatar from '@material-ui/core/Avatar'
-  import carl from '../img/carl.jpg'
+  
 import axios from 'axios';
 import CircularProgress from '@material-ui/core/CircularProgress'
 import Cookie from 'js-cookie'
-import { ResponsivePie } from '@nivo/pie'
-import { ResponsiveSunburst } from '@nivo/sunburst'
-import { ResponsiveBar } from '@nivo/bar'
-// import ClipLoader from "react-spinners/ClipLoader";
-// import BounceLoader from  "react-spinners/BounceLoader";
-// import DotLoader from  "react-spinners/DotLoader";
-// import FadeLoader	from "react-spinners/FadeLoader";
+
 import {HashLoader,RingLoader,PulseLoader,PropagateLoader,MoonLoader,PuffLoader} from  "react-spinners";
-import { ResponsiveBullet } from '@nivo/bullet'
+
 import LinearProgress from '@material-ui/core/LinearProgress';
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 import HourglassEmptyIcon from '@material-ui/icons/HourglassEmpty';
-import TrendingUpIcon from '@material-ui/icons/TrendingUp';
-import TrendingDownIcon from '@material-ui/icons/TrendingDown';
+
 import ToolTip from '@material-ui/core/Tooltip'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faBtc, faEthereum } from '@fortawesome/free-brands-svg-icons'
+
 import { TechnicalAnalysis } from "react-ts-tradingview-widgets";
 //import Router from 'next/dist/next-server/lib/router/router';
 import {Formik} from 'formik'
@@ -81,7 +69,7 @@ import CryptoCompare from 'react-crypto-compare'
 import Table from 'rc-table'
 import { CryptoCurrencyMarket } from "react-ts-tradingview-widgets";
 import { MarketOverview } from "react-ts-tradingview-widgets";
-import { Line, Bar } from "react-chartjs-2";
+
 import tetherIcon from '../img/teth.svg'
 // import {
 //     chartExample1,
@@ -92,32 +80,19 @@ import tetherIcon from '../img/teth.svg'
 import safemoon from '../img/safemoon.svg'
 import btcIcon from '../img/bitcoin.svg'
 import ethIcon from '../img/eth.svg'
-import Close from '@material-ui/icons/CloseOutlined'
-import CheckCircle from '@material-ui/icons/CheckCircleOutline'
-import Footer from 'rc-footer';
-import 'rc-footer/assets/index.css';
-import PhoneIcon from '@material-ui/icons/Phone'
-import EmailIcon from '@material-ui/icons/Email'
-import AddressIcon from '@material-ui/icons/LocationCity'
+
 import black from '../img/black.png'
 import AlertIcon from '@material-ui/icons/NotificationImportantOutlined'
 import NotificationsNone from '@material-ui/icons/NotificationsActiveRounded'
-import white from '../img/white.png'
-import logo1 from '../img/logo1.png'
+
 import Head from 'next/head'
 import MyFooter from '../components/myFooter'
 import {MiniChart} from 'react-ts-tradingview-widgets'
-import connectDB from '../middleware/mongodb';
-import users from '../middleware/models';
-import mongoose from 'mongoose'
-import {parseCookies} from './api/cookies'
-import userInfo from './api/info' 
-import {getData} from './api/info'
-import useSWR from 'swr'
+
 import balance from '../img/crypto.svg'
 import { CircularProgressbarWithChildren,buildStyles } from 'react-circular-progressbar';
 import Divider from '@material-ui/core/Divider'
-import TrendLineIcon from '@material-ui/icons/TrendingUpTwoTone'
+
 import { AdvancedRealTimeChart } from "react-ts-tradingview-widgets";
 import CreditCard from '@material-ui/icons/CreditCard'
 import {useRouter} from 'next/router'
@@ -146,20 +121,10 @@ const Dashboard=({data})=>{
     const [mobile,setMobile]=useState()
     const [content,setContent]=useState('Balance')
     const [balanceElev,setBalanceElev]=useState(7)
-    const [withdrawElev,setWithdrawElev]=useState(7)
-    const [depositElev,setDepositElev]=useState(7)
-    const [chartsElev,setChartsElev]=useState(7)
-    const [messagesElev,setMessagesElev]=useState(7)
-    const [coin,setCoin]=useState({
-      btc:null,
-      eth:null,
-      tether:null,
-      safemoon:null
-    })
+    
     //const {info,error}=useSWR('/api/info',fetcher)
     const [info,setInfo]=useState()
     const [chart,setChart]=useState('BTCUSD')
-    const username=Cookie.get('user')
     //const {user,setUser}=useSWR('/api/info',fetcher)
     const [gotten,setGotten]=useState(false)
     const [analPair,setPair]=useState('BTCUSD')
@@ -173,18 +138,9 @@ const Dashboard=({data})=>{
     const [withdraw,setWithdraw]=useState(false)
     const [withdrawal,setWithdrawal]=useState(0)
     const [pending,setPending]=useState(false)
-    const [coinData,setCoinData]=useState()
-    const [btc,setBtc]=useState()
-    const [eth,setEth]=useState()
-    const [coinChart,setCoinChart]=useState(false)
-    const [btcData,setBtcData]=useState(false)
-    const [ethData,setEthData]=useState(false)
+    
     const [phone,setPhone]=useState()
-    const [prevCon,setPrevCon]=useState()
-    const [moon,setMoon]=useState()
-    const [tether,setTether]=useState()
-    const [moonData,setMoonData]=useState(false)
-    const [tetherData,setTetherData]=useState(false)
+    
     const [action,setAction]=useState('confirm')
 
     const Router=useRouter()
@@ -226,38 +182,7 @@ const Dashboard=({data})=>{
 
     
 
-    //const container = window !== undefined ? () => window().document.body : undefined;
     
-
-
-    // const getBtc=()=>{
-    //     axios.get('https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=7&interval=minutes')
-    //     .then((res)=>{
-    //         //console.log(res.data.prices)
-    //         // setBtcData(res.data.prices)
-    //         // console.log(btcData)
-    //         //setCoinData(res.data.prices)
-    //         let x=[]
-    //         let y=[]
-    //         res.data.prices.forEach((item)=>{
-    //             x.push(parseInt(item[0].toString().slice(0,2))),
-    //             y.push(parseInt(item[1].toString().slice(0,3)))
-    //         })
-    //         setBtc({
-    //             x:x.slice(0,25),
-    //             y:y.slice(0,25)
-    //         })
-    //         setBtcData(true)
-    //         // setCoinChart(true)
-    //         // console.log(btc)
-            
-    //     })
-    //     .catch((err)=>{
-    //         console.log(err)
-    //     })
-       
-    // }
-
     const getInfo=()=>{
       let person=Cookie.get('user')
       let raw=JSON.parse(person)  
@@ -541,14 +466,12 @@ const Dashboard=({data})=>{
   <PeopleOutline style={{color:'#ffab00',marginBottom:-20}} />
           
           </Grid> */}
-          <Grid  justify='center' alignItems='center' item md={12} xs={12} style={{color:'white',marginTop:5,textAlign:'center'}}>
+          <Grid  justify='center' alignItems='center' item md={12} xs={12} style={{marginTop:5,textAlign:'center'}}>
             
-              {/* <a style={{color:'#ffab00',}}>
-                 www.winstertrade<br/>investment.com/{data.username}
-              </a> */}
+             
               {
                 gotten ?
-                <a href={`https://winstertradeinvestment.com/${info.username}`} style={{color:'#ffab00',fontSize:16,textAlign:'center'}}>
+                <a className='affili-link' href={`https://winstertradeinvestment.com/${info.username}`} style={{textAlign:'center',color:'#ffab00'}}>
                  winstertradeinvestment.com/{info.username}
               </a>
               :
@@ -769,8 +692,9 @@ const Dashboard=({data})=>{
 <Paper style={{padding:0,marginTop:10,width:'90%',height:500}} className='profile-paper coin-grid'>
 
 <Grid style={{}} className='tech-grid' container justify='center'>
-<TechnicalAnalysis   width='100%' symbol={tech}   style={{marginTop:20}} isTransparent colorTheme="dark"></TechnicalAnalysis>
-</Grid>
+
+<TechnicalAnalysis height='420'   width='100%' symbol={tech}   style={{marginTop:20}} isTransparent colorTheme="dark"></TechnicalAnalysis>
+
 <Grid className='tech-row' style={{}} id='pair' container direction='row'>
                                                
                                                <Grid className='coin-sel' xs={3} md={3} container justify='center' alignItems='center'>
@@ -880,6 +804,8 @@ const Dashboard=({data})=>{
                                                     </Grid>
     
                                                     </Grid>
+</Grid>
+
 </Paper>
 </Grid>
 </Grid>
@@ -1114,13 +1040,17 @@ const Dashboard=({data})=>{
                               
                                   <Grid container>
                                  
+                                
+                                 <Modal  style={{display:'grid',placeItems:'center',}} ba 
+                                 
+                                 onClose={()=>setShowDepo(false)} open={showDepo}>
+                                   
                                   
-                                 <Modal  style={{display:'grid',placeItems:'center',}} ba onClose={()=>setShowDepo(false)} open={showDepo}>
-                                  
+                                   <Grid style={{width:'90%'}} container justify='center'>
                                    <Grid className='depo-modal' 
-                                   style={{backgroundColor:'black',margin:20,borderRadius:10,marginTop:0,border:'3px solid #ffab00',width:'50%'}}
+                                   style={{backgroundColor:'black',margin:20,borderRadius:10,marginTop:0,border:'3px solid #ffab00'}}
                                     container justify='center' alignItems='center'>
-                                   <p  style={{color:'white',textAlign:'center',fontSize:20,width:'80%',padding:10}}>
+                                   <p  style={{color:'white',textAlign:'center',fontSize:20,width:'90%',padding:10}}>
                                     You are about to make a deposit of <span style={{color:'#ffab00'}}>${values.amount}</span>, You are required to pay the sum of <CryptoCompare style={{color:'blue'}} from='USD'  to={depoPair} amount={deposit} apikey="9e17d4341c26890479617fab12138968c28eecdfd8ac77be8d0bd181fa919870" /> 
                                     to the wallet address {depoPair=='BTC' ? <a href='#' style={{color:'#ffab00'}}>bc1q30ljt5azln7ygmtaa<br/>yuw4lak3ez2cl05qdzg6d</a>
                                      :
@@ -1137,6 +1067,7 @@ const Dashboard=({data})=>{
                                      <Button  style={{color:'#ffab00'}} onClick={()=>setShowDepo(false)} >
                                         close
                                      </Button>
+                                   </Grid>
                                    </Grid>
                                    </Grid>
 

@@ -38,14 +38,7 @@ const Affiliate = () => {
          
 
             </Grid>
-            {/* <Grid direction='row' container justify='center'>
-              <Grid xs={12} md={6} container justify >
-                <div className='world'>
-
-                </div>
-              </Grid>
-               
-            </Grid> */}
+           
            </Paper>
           </Fade>
 

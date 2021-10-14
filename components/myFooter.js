@@ -26,16 +26,7 @@ import 'rc-footer/assets/index.css';
 //const useStyles = makeStyles(styles);
 
 function MyFooter(props) {
-//   const classes = useStyles();
-//   const { whiteFont } = props;
-//   const footerClasses = classNames({
-//     [classes.footer]: true,
-//     [classes.footerWhiteFont]: whiteFont
-//   });
-//   const aClasses = classNames({
-//     [classes.a]: true,
-//     [classes.footerWhiteFont]: whiteFont
-//   });
+
   return (
    <Grid style={{marginBottom:-180,backgroundColor:'black'}} className='countdown-bg'>
      <Footer
@@ -48,8 +39,7 @@ function MyFooter(props) {
             <PhoneIcon style={{color:'#9a7801',width:25,height:25,}} />
           ),
          title:' Phone: +48732121453',
-          //url: 'https://yuque.com',
-          //description:' +48732121453',
+         
           openExternal:false,
           className:'main-footer',
          },
@@ -58,8 +48,7 @@ function MyFooter(props) {
             <EmailIcon style={{color:'#9a7801',width:25,height:25}} />
           ),
          title:' E-mail: winsterinvest@gmail.com',
-          //url: 'https://yuque.com',
-          //description:' +48732121453',
+          
           openExternal: false,
           className:'main-footer',
         },
@@ -68,8 +57,7 @@ function MyFooter(props) {
             <AddressIcon style={{color:'#9a7801',width:25,height:25}} />
           ),
          title:'Address: 63 kenton Road, Yorkshire, England',
-          //url: 'https://yuque.com',
-          //description:' +48732121453',
+         
           openExternal: false,
           className:'main-footer',
         },

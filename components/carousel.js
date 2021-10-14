@@ -1,20 +1,11 @@
 import React from 'react'
 
-import PropTypes from 'prop-types';
 
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
 import { Grid,Card,CardHeader,CardContent,Container,Paper,CircularProgress } from '@material-ui/core'
 import { CircularProgressbarWithChildren,buildStyles } from 'react-circular-progressbar';
-import LooksOne from '@material-ui/icons/LooksOneTwoTone'
-import LooksThree from '@material-ui/icons/Looks3TwoTone'
-import LooksTwo from '@material-ui/icons/LooksTwoTwoTone'
-import one from '../img/1.png'
-import two from '../img/2.png'
-import three from '../img/3.png'
+
 import Image from 'next/image'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faBtc, faEthereum } from '@fortawesome/free-brands-svg-icons'
+
 import safe from '../img/safemoon.svg'
 import tether from '../img/tether.svg'
 import eth from '../img/eth.svg'
