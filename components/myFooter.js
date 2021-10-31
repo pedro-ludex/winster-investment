@@ -28,7 +28,7 @@ import 'rc-footer/assets/index.css';
 function MyFooter(props) {
 
   return (
-   <Grid style={{marginBottom:-180,backgroundColor:'black'}} className='countdown-bg'>
+   <Grid style={{marginBottom:-180, zIndex:1000}} className='footer-background countdown-bg1'>
      <Footer
   className='main-footer'
     columns={[
@@ -47,7 +47,7 @@ function MyFooter(props) {
           icon: (
             <EmailIcon style={{color:'#9a7801',width:25,height:25}} />
           ),
-         title:' E-mail: winsterinvest@gmail.com',
+         title:' E-mail: winsterinvest@winster.com',
           
           openExternal: false,
           className:'main-footer',

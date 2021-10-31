@@ -7,7 +7,14 @@ import {HashLoader} from 'react-spinners'
 import Header from '../components/Header'
 import HeaderLinks from '../components/HeaderLinks'
 import MyFooter from '../components/myFooter'
+import white from '../img/black.png'
+import Menu from '@material-ui/icons/Menu'
+import Image from 'next/image'
+import Head from 'next/head'
+
+
 //import {useRouter} from 'next/router'
+
 
 const Password = () => {
     const [loading,setLoading]=useState({
@@ -20,22 +27,47 @@ const Password = () => {
     
 
     return (
-        <div style={{display:'grid',placeItems:'center'}}>
-            <Grid style={{}} justify='center' container>
+        <div style={{}}>
+            <Head>
+                <title>
+                    Password reset
+                </title>
+            </Head>
+            <div>
+            <Header
+          
+          fixed
+          color="transparent"
+          //routes={dashboardRoutes}
+          // changeColorOnScroll={{
+          //   color:'transparent',
+          //   height:40,
+          // }}
+          
+         style={{color:'white'}}
+          //headersty='Winster trade investment'
+         menu={ <Menu />}
+         text={'black'}
+          image={<Image src={white} width={50} height={40} layout='intrinsic' />}
+          //faqs={faqsScroll} start={startScroll} contact={contactScroll} testimonial={testimonialScroll} package={packageScroll} service={serviceScroll} about={aboutScroll}
+/>
+
+            </div>
+            <Grid style={{marginTop:60,marginBottom:60}} justify='center' container>
             <Paper elevation={30} style={{}}  className='reset-paper'>
-               <Grid justify='center' container style={{backgroundColor:'rgba(0,0,0,0.7)',height:"100%"}}>
+               <Grid justify='center' container style={{backgroundColor:'rgba(0,0,0,0.4)',height:"100%",padding:20}}>
                <Grid xs={12} md={12} container justify='center' alignItems='center'>
                <h3 className='reset-header' style={{}}>
                     <span style={{color:'#ffab00'}}>Password</span> reset
                 </h3>
                </Grid>
-                <Grid item justify='center' style={{}}>
-                <h6 style={{textAlign:'center'}}>
-                    Please fill in your Email address 
-                </h6>
+                <Grid item justify='center' style={{padding:30}}>
+                <p style={{textAlign:'center',fontSize:18,color:'white'}}>
+                    Please fill in your Email address and if you are a member you will recieve an Email from us
+                </p>
                 </Grid>
 
-                <Grid container justify='center'>
+                <Grid style={{marginTop:30}} container justify='center'>
                 <form>
                     <Formik initialValues={{email:''}} onSubmit={(value)=>{
                         let user={
@@ -72,7 +104,7 @@ const Password = () => {
                             <Grid justify='center' alignItems='center' container >
                                 <Input
         className='app-input reset-input'
-        style={{color:'white'}}
+        style={{color:'white',textAlign:'center'}}
         placeholder='Email address'
           id="mail"
           color='primary'
@@ -122,8 +154,11 @@ const Password = () => {
                 </Grid>
                </Grid>
             </Paper>
+           
             </Grid>
+            <div style={{}} container justify='center'>
             <MyFooter />
+            </div>
         </div>
     )
 }

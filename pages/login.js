@@ -40,7 +40,7 @@ import white from '../img/black.png'
 import HeaderLinks from '../components/HeaderLinks'
 import Image from 'next/image'
 import Menu from "@material-ui/icons/Menu";
-
+import Head from 'next/head'
 
 
 //import {Dot} from '@material-ui/icons/dot'
@@ -86,7 +86,7 @@ const Login=()=> {
       return (
         <div style={{display:'grid',placeItems:"center"}} >
           {/* <CircularProgress style={{color:'#ffab00'}} /> */}
-          <HashLoader size={52} color='#ffab00' />
+          <HashLoader color='#ffab00' />
         </div>
       )
     }
@@ -131,7 +131,12 @@ const Login=()=> {
   }
   
   return (
-   <div>
+   <div style={{}}>
+     <Head>
+       <title>
+         Login
+       </title>
+     </Head>
       <Header
           
           fixed
@@ -664,11 +669,11 @@ canvasClassName='particle-canvas'
 	    }
 	/>
 
-       <Paper elevation={20} style={{display:'grid',placeItems:'center',zIndex:1000,backgroundColor:'#131519',marginTop:100}} className='signup'>
+       <Paper elevation={20} style={{display:'grid',placeItems:'center',zIndex:1000,backgroundColor:'#131519'}} className='signup'>
          
     <Card style={{
         // background:'linear-gradient(#131519 0%,#131519 50%,ffab00 80%)',
-        backgroundColor:"rgba(0,0,0,0.5)",
+        backgroundColor:"rgba(0,0,0,0.4)",
         width:'100%',
         // marginBottom:170,
         height:'100%',
@@ -677,9 +682,9 @@ canvasClassName='particle-canvas'
     }}  >
 
         <CardContent >
-        <h2 style={{marginTop:10,textAlign:'center',marginBottom:70}}>
+        <h3 style={{marginTop:10,textAlign:'center',marginBottom:70}}>
         <span style={{color:'#ffab00',textAlign:'center'}}>Login</span> to your Account
-        </h2>
+        </h3>
         <Formik initialValues={{email:'',password:''}} onSubmit={(values)=>{
                   let user={
                    
@@ -772,7 +777,7 @@ canvasClassName='particle-canvas'
 
 <Input
         className='app-input'
-        style={{color:'white',marginTop:50}}
+        style={{color:'white',marginTop:30}}
         placeholder='Password'
           id="input-with-icon-adornment"
           color='primary'
@@ -796,11 +801,11 @@ canvasClassName='particle-canvas'
         />
         <div style={{marginTop:20}}>
          <p style={{fontSize:16,textAlign:'center'}} className='heading-text'>
-         Cant remember password ? click <a href='/password_reset' style={{textDecoration:'none',color:'#ffab00'}}>here</a>
+         Forgotten password? click <a href='/password_reset' style={{textDecoration:'none',color:'#ffab00'}}>here</a>
          </p>
         </div>
          <div style={{display:'grid',placeItems:'center',
-            marginTop:10,backgroundColor:'rgba(0,0,0,0)',width:'100%',height:150}}>
+            marginTop:10,backgroundColor:'rgba(0,0,0,0)',width:'100%'}}>
              <div >
              {showButton(handleSubmit)}
              </div>
@@ -817,7 +822,9 @@ canvasClassName='particle-canvas'
    </Paper>
 
    </div>
-   <MyFooter />
+  <div style={{marginTop:60}}>
+  <MyFooter />
+  </div>
    </div>
   );
 }

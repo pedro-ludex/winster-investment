@@ -66,7 +66,7 @@ const Products = (props) => {
                                              <Image width={100} height={100} src={crypto} layout='intrinsic' />
                                              </div>
                                              <h5 style={{textAlign:'center' ,color:'#ffab00',marginTop:40}}>
-                                                 Crypto mining
+                                                  Crypto mining
                                              </h5>
                                              <div style={{color:'white',textAlign:'center'}}>
                                                 Fast and efficient mining solutions using the latest technologies and hardware with steady rates and no hidden charges

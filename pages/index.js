@@ -190,8 +190,8 @@ s0.parentNode.insertBefore(s1,s0);
           //   height:40,
           // }}
           
-         
-          //header='Winster trade investment'
+         style={{color:'white'}}
+          //headersty='Winster trade investment'
          menu={ <Menu />}
           image={<Image src={white} width={50} height={40} layout='intrinsic' />}
           faqs={faqsScroll} start={startScroll} contact={contactScroll} testimonial={testimonialScroll} package={packageScroll} service={serviceScroll} about={aboutScroll}

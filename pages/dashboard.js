@@ -180,7 +180,9 @@ const Dashboard=({data})=>{
     },[])
 
 
-    
+    const scrollTop=()=>{
+      window.scrollTo({ top: 0, behavior: 'auto' })
+    }
 
     
     const getInfo=()=>{
@@ -235,14 +237,14 @@ const Dashboard=({data})=>{
           title:'Amount($)',
           dataIndex:'amount',
           key:'amount',
-          width:50,
+          width:30,
           fixed:false
         },
         {
           title:'Currency',
           dataIndex:'pair',
           key:'pair',
-          width:50,
+          width:30,
           fixed:false
         },
        
@@ -250,34 +252,34 @@ const Dashboard=({data})=>{
           title:'Date',
           dataIndex:'date',
           key:'date',
-          width:50,
+          width:30,
           fixed:false
         },
         {
-            title:'Reference no',
+            title:'Ref',
             dataIndex:'key',
             key:'key',
-            width:50,
+            width:30,
             fixed:false,
             style:{
                 color:'#ffab00'
             }
           },
           {
-            title:'Confirm',
-            dataIndex:'',
+            title:'Status',
+            dataIndex:'status',
             key:'key',
             width:30,
-            render:()=> action=='confirm' ?
-             <Grid container alignItems='center'>
-                 <Button style={{color:'#ffab00',fontSize:16}}>Confirm</Button>
-             </Grid>
-            //  : action=='load' ?
-            //  <Grid container alignItems='center' justify='center'>
-            //      <HashLoader size={30} color='#ffab00' />
-            // </Grid>
-            :
-            null
+          //   render:()=> action=='confirm' ?
+          //    <Grid container alignItems='center'>
+          //        <Button style={{color:'#ffab00',fontSize:16}}>Confirm</Button>
+          //    </Grid>
+          //   //  : action=='load' ?
+          //   //  <Grid container alignItems='center' justify='center'>
+          //   //      <HashLoader size={30} color='#ffab00' />
+          //   // </Grid>
+          //   :
+          //   null
 
           },
         
@@ -695,6 +697,8 @@ const Dashboard=({data})=>{
 
 <TechnicalAnalysis height='420'   width='100%' symbol={tech}   style={{marginTop:20}} isTransparent colorTheme="dark"></TechnicalAnalysis>
 
+
+</Grid>
 <Grid className='tech-row' style={{}} id='pair' container direction='row'>
                                                
                                                <Grid className='coin-sel' xs={3} md={3} container justify='center' alignItems='center'>
@@ -804,8 +808,6 @@ const Dashboard=({data})=>{
                                                     </Grid>
     
                                                     </Grid>
-</Grid>
-
 </Paper>
 </Grid>
 </Grid>
@@ -1609,7 +1611,7 @@ s0.parentNode.insertBefore(s1,s0);
           dismissible
           open={mobile}
           style={{backgroundColor:'black',height:'140vh'}}
-          onOpen={()=>{window.scrollTo({ top: 0, behavior: 'auto' })}}
+          onOpen={scrollTop}
           
           //className='drawer'
         >
