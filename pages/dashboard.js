@@ -38,7 +38,7 @@ import StarBorderIcon from '@material-ui/icons/StarBorder';
 import BarChartIcon from '@material-ui/icons/BarChart'
 
 import Image from 'next/image'
-import { ResponsivePieCanvas } from '@nivo/pie'
+
 import Drawer, {
     DrawerHeader,
    
@@ -49,26 +49,26 @@ import Drawer, {
   import "@material/react-drawer/dist/drawer.css";
   
 import axios from 'axios';
-import CircularProgress from '@material-ui/core/CircularProgress'
+
 import Cookie from 'js-cookie'
 
-import {HashLoader,RingLoader,PulseLoader,PropagateLoader,MoonLoader,PuffLoader} from  "react-spinners";
+import {HashLoader,} from  "react-spinners";
 
 import LinearProgress from '@material-ui/core/LinearProgress';
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 import HourglassEmptyIcon from '@material-ui/icons/HourglassEmpty';
 
 import ToolTip from '@material-ui/core/Tooltip'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { TechnicalAnalysis } from "react-ts-tradingview-widgets";
 //import Router from 'next/dist/next-server/lib/router/router';
 import {Formik} from 'formik'
-import {Input,FormControl,InputAdornment,Popover} from '@material-ui/core'
+import {Input,Popover} from '@material-ui/core'
 import CryptoCompare from 'react-crypto-compare'
 import Table from 'rc-table'
 import { CryptoCurrencyMarket } from "react-ts-tradingview-widgets";
-import { MarketOverview } from "react-ts-tradingview-widgets";
+
 
 import tetherIcon from '../img/teth.svg'
 // import {
