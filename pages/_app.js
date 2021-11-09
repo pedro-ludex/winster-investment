@@ -27,7 +27,7 @@ const theme = createMuiTheme({
 function MyApp({ Component, pageProps }) {
   return (
     <div>
-      <Head>
+      {/* <Head>
       <link rel="shortcut icon" href={fav} type="image/x-icon" />
       <link sizes="180x180"  rel="icon" href={fav} />
           <link
@@ -36,7 +36,7 @@ function MyApp({ Component, pageProps }) {
             href={fav}
           />
       </Head>
-    
+     */}
      <ThemeProvider theme={theme}>
      <NextIntlProvider messages={pageProps.messages}>
      <Component {...pageProps} />
