@@ -8,7 +8,7 @@ import Menu from "@material-ui/icons/Menu";
 import white from '../img/black.png'
 import Image from 'next/image'
 //import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-//import {useTranslations} from 'next-intl';
+import {useTranslations} from 'next-intl';
 
 
 
@@ -100,17 +100,17 @@ const t = useTranslations('Policy');
 //     };
 //   }
 
-// export function getStaticProps({locale}) {
+export function getStaticProps({locale}) {
 
-//     console.log(locale)
-//     return {
-//       props: {
-//         // You can get the messages from anywhere you like, but the recommended
-//         // pattern is to put them in JSON files separated by language and read 
-//         // the desired one based on the `locale` received from Next.js. 
-//         messages: require(`../public/locales/${locale}.json`),
-//       }
-//     };
-//   }
+    console.log(locale)
+    return {
+      props: {
+        // You can get the messages from anywhere you like, but the recommended
+        // pattern is to put them in JSON files separated by language and read 
+        // the desired one based on the `locale` received from Next.js. 
+        messages: require(`../public/locales/${locale}.json`),
+      }
+    };
+  }
 
  export default Policy

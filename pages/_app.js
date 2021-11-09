@@ -7,7 +7,7 @@ import '../styles/widgets.min.css'
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 //import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 //import { appWithTranslation } from 'next-i18next';
-//import {NextIntlProvider} from 'next-intl';
+import {NextIntlProvider} from 'next-intl';
 import Head from 'next/head'
 import fav from '../public/logo1.png'
 
@@ -27,7 +27,7 @@ const theme = createMuiTheme({
 function MyApp({ Component, pageProps }) {
   return (
     <div>
-      {/* <Head>
+      <Head>
       <link rel="shortcut icon" href={fav} type="image/x-icon" />
       <link sizes="180x180"  rel="icon" href={fav} />
           <link
@@ -35,12 +35,12 @@ function MyApp({ Component, pageProps }) {
             sizes="90x90"
             href={fav}
           />
-      </Head> */}
+      </Head>
     
      <ThemeProvider theme={theme}>
-     
+     <NextIntlProvider messages={pageProps.messages}>
      <Component {...pageProps} />
-     
+     </NextIntlProvider>
       </ThemeProvider>
   
     </div>
