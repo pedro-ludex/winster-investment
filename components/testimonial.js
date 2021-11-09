@@ -25,11 +25,11 @@ const Testimonials = () => {
 
     return (
         <div style={{margin:60,marginTop:-40}}>
-            <h3 style={{textAlign:'center',marginBottom:50}}>
-              Top rated investors of <span style={{color:'#ffab00'}}>August</span>
+            <h3 style={{textAlign:'center',marginBottom:80}}>
+              Top rated investors of <span style={{color:'#ffab00'}}>October</span>
             </h3>
             <Grid direction='row' container justify='center' alignItems>
-                <Grid style={{zIndex:1000}} container justify='center' alignItems xs={12} md={3} >
+                <Grid className='testimonial-grid' style={{zIndex:1000}} container justify='center' alignItems xs={12} md={3} >
                     <Paper className='countdown-bg1' style={{backgroundColor:'#131519',padding:20}} elevation={20} >
                         <Grid container justify='center'>
                             {/* <Image style={{margin:20}} height={200} width={170} src={aiden} layout='intrinsic' /> */}
@@ -62,7 +62,7 @@ const Testimonials = () => {
 
                             <div style={{fontSize:18,color:'white',margin:10}}>
                                 Maturity: 
-                                <span style={{color:'#ffab00'}}> 5 days</span>
+                                <span style={{color:'#ffab00'}}> 15 days</span>
 
                             </div>
                           
@@ -74,7 +74,7 @@ const Testimonials = () => {
 
 
 
-                <Grid style={{zIndex:1000}} container justify='center' alignItems xs={12} md={3} >
+                <Grid className='testimonial-grid' style={{zIndex:1000}} container justify='center' alignItems xs={12} md={3} >
                     <Paper className='countdown-bg1' style={{backgroundColor:'#131519',padding:20}} elevation={20} >
                         <Grid container justify='center'>
                             {/* <Image style={{margin:20}} height={200} width={170} src={per3} layout='intrinsic' /> */}
@@ -107,7 +107,7 @@ const Testimonials = () => {
 
                             <div style={{fontSize:18,color:'white',margin:10}}>
                                 Maturity: 
-                                <span style={{color:'#ffab00'}}> 4 days</span>
+                                <span style={{color:'#ffab00'}}> 23 days</span>
 
                             </div>
                          
@@ -118,7 +118,7 @@ const Testimonials = () => {
 
 
 
-                <Grid style={{zIndex:1000}} container justify='center' alignItems xs={12} md={3} >
+                <Grid className='testimonial-grid' style={{zIndex:1000}} container justify='center' alignItems xs={12} md={3} >
                     <Paper className='countdown-bg1' style={{backgroundColor:'#131519',padding:20}} elevation={20} >
                         <Grid container justify='center'>
                             {/* <Image style={{margin:20}} height={200} width={170} src={per2} layout='intrinsic' /> */}
@@ -151,14 +151,14 @@ const Testimonials = () => {
 
                             <div style={{fontSize:18,color:'white',margin:10}}>
                                 Maturity: 
-                                <span style={{color:'#ffab00'}}> 7 days</span>
+                                <span style={{color:'#ffab00'}}> 19 days</span>
 
                             </div>
                          
                         </Grid>
                     </Paper>
                 </Grid>
-                <Grid style={{zIndex:1000}} container justify='center' alignItems xs={12} md={3} >
+                <Grid className='testimonial-grid' style={{zIndex:1000}} container justify='center' alignItems xs={12} md={3} >
                     <Paper className='countdown-bg1' style={{backgroundColor:'#131519',padding:20}} elevation={20} >
                         <Grid container justify='center'>
                             {/* <Image style={{margin:20}} height={200} width={170} src={per3} layout='intrinsic' /> */}
@@ -191,7 +191,7 @@ const Testimonials = () => {
 
                             <div style={{fontSize:18,color:'white',margin:10}}>
                                 Maturity: 
-                                <span style={{color:'#ffab00'}}> 5 days</span>
+                                <span style={{color:'#ffab00'}}> 10 days</span>
 
                             </div>
                          

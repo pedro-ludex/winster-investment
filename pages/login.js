@@ -673,7 +673,7 @@ canvasClassName='particle-canvas'
          
     <Card style={{
         // background:'linear-gradient(#131519 0%,#131519 50%,ffab00 80%)',
-        backgroundColor:"rgba(0,0,0,0.4)",
+        backgroundColor:"rgba(0,0,0,0.6)",
         width:'100%',
         // marginBottom:170,
         height:'100%',

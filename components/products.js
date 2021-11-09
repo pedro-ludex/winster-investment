@@ -205,10 +205,10 @@ const Products = (props) => {
                                              <Image width={100} height={100} src={crypto} layout='intrinsic' />
                                              </div>
                                              <h5 style={{textAlign:'center' ,color:'#ffab00',marginTop:40}}>
-                                                 Crypto Loans
+                                                  Crypto mining
                                              </h5>
                                              <div style={{color:'white',textAlign:'center'}}>
-                                             We offer loans to organizations and individuals, our interest rates are reasonable and without worry.
+                                                Fast and efficient mining solutions using the latest technologies and hardware with steady rates and no hidden charges
                                              </div>
                                            
                                          </CardContent>

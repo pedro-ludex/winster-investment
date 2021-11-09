@@ -585,7 +585,9 @@ input:-webkit-autofill
 .affili-link {
   font-size: 16;
 }
-
+.testimonial-grid {
+  margin-top: 35px;
+}
 
 
 
@@ -601,6 +603,9 @@ input:-webkit-autofill
 
 
   @media all and (min-width:800px){
+    .testimonial-grid {
+      margin-top: 0px;
+    }
     .tech-row {
       /* margin-bottom:20px; */
       /* margin-top: auto;

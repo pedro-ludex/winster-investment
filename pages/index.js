@@ -118,6 +118,15 @@ const Home = () => {
     // }
   },[])
 
+  const getday=()=>{
+    let day=new Date()
+    return (
+      <span style={{color:'#ffab00'}}>
+        {60-day.getDay()}
+      </span>
+    )
+  }
+
   
   const stopCount=()=>{
     setCount(true)
@@ -922,7 +931,11 @@ canvasClassName='particle-canvas'
               <h5 className="title">Distribution
                 <br />Ends In:</h5>
               <div className="crumina-countdown-item">
-              <Clock format={'hh-mm'} />
+              <h3 style={{fontSize:45}}>
+                {
+                  getday()
+                } days
+              </h3>
               </div>
 
 

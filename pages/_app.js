@@ -7,7 +7,7 @@ import '../styles/widgets.min.css'
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 //import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 //import { appWithTranslation } from 'next-i18next';
-import {NextIntlProvider} from 'next-intl';
+//import {NextIntlProvider} from 'next-intl';
 import Head from 'next/head'
 import fav from '../public/logo1.png'
 
@@ -38,9 +38,9 @@ function MyApp({ Component, pageProps }) {
       </Head>
     
      <ThemeProvider theme={theme}>
-     <NextIntlProvider messages={pageProps.messages}>
+     
      <Component {...pageProps} />
-     </NextIntlProvider>
+     
       </ThemeProvider>
   
     </div>

@@ -1,18 +1,18 @@
-const withPlugins = require("next-compose-plugins");
-const withImages = require("next-images");
-const withSass = require("@zeit/next-sass");
-const webpack = require("webpack");
-const path = require("path");
-const withCss=require('@zeit/next-css')
-const nextTranslate = require('next-translate')
-//const { i18n } = require('./next-i18next.config');
+// const withPlugins = require("next-compose-plugins");
+// const withImages = require("next-images");
+// const withSass = require("@zeit/next-sass");
+// const webpack = require("webpack");
+// const path = require("path");
+// const withCss=require('@zeit/next-css')
+// const nextTranslate = require('next-translate')
+// //const { i18n } = require('./next-i18next.config');
 
-module.exports = {
-  i18n: {
-    locales: ['en-US', 'fr'],
-    defaultLocale: 'en-US',
-  },
-}
+// module.exports = {
+//   i18n: {
+//     locales: ['en-US', 'fr'],
+//     defaultLocale: 'en-US',
+//   },
+// }
 
 // module.exports = withPlugins([i18n], {
 //   // skipTypescriptChecking: true,
