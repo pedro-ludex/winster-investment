@@ -25,7 +25,7 @@ const Register = async (req, res) => {
    users.exists({email:req.body.user.email },{username:req.body.user.username})
    .then((exists)=>{
      if(exists==true){
-       res.send('THAT EMAILL ADDRESS IS TAKEN')
+       res.send('THAT EMAIL ADDRESS IS TAKEN')
        console.log('exists')
        console.log(exists)
      }

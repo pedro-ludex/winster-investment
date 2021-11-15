@@ -28,9 +28,9 @@ const Faqs=()=> {
   return (
     <Grid container justify='center' style={{marginBottom:80}} >
        <Paper style={{backgroundColor:'rgba(0,0,0,0.3)'}} elevation={20} className=' faqs-paper'>
-       <h3 style={{textAlign:'center',marginBottom:30,marginTop:10}}>
+       <h4 style={{textAlign:'center',marginBottom:30,marginTop:10}}>
             Faqs
-        </h3>
+        </h4>
       <Accordion className='faqs-accordion countdown-bg1'>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon style={{color:'#ffba00'}} />}

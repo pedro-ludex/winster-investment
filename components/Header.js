@@ -69,8 +69,8 @@ export default function Header(props) {
 
   
   return (
-    <AppBar style={{backgroundColor:'#ffab00',boxShadow:'none',height:50}} >
-      <Toolbar style={{color:'white',marginTop:-2}} 
+    <AppBar className='app-bar-main' style={{boxShadow:'none'}} >
+      <Toolbar style={{color:'white'}} 
       //className={classes.container}
       className='appbar-container'
       >

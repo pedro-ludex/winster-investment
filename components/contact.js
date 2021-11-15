@@ -18,9 +18,9 @@ const Contact=()=>{
             <Grid  style={{zIndex:1000}} container justify='center'>
               <Paper className='contact' elevation={10}>
               <div style={{backgroundColor:'rgba(0,0,0,0.6)',height:'100%',width:'100%'}}>
-              <h3 style={{textAlign:'center',color:'#ffab00'}}>
+              <h4 style={{textAlign:'center',color:'#ffab00'}}>
                     Contact us
-                </h3>
+                </h4>
                 <p style={{textAlign:'center',fontSize:20,color:'white'}}>
                     Get in touch with us
                 </p>

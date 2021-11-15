@@ -20,9 +20,9 @@ import Paper from '@material-ui/core/Paper'
 const Security = () => {
     return (
         <div className='security' style={{}}>
-            <h3 style={{textAlign:'center',color:''}} className='choose-heading'>
-                Secure your financial freedom
-            </h3>
+            <h4 style={{textAlign:'center',color:''}} className='choose-heading'>
+                Trusted and Secure
+            </h4>
             <p style={{textAlign:'center',fontSize:18,padding:20}}>
                 By investing with winster trade investment you are assured of
             </p>
@@ -72,13 +72,11 @@ const Security = () => {
 
 
 
-            <h3 style={{textAlign:'center',marginTop:100}}>
-                Secure and how you want it
-            </h3>
-            <p style={{textAlign:'center',fontSize:16}}>
+            
+            <p style={{textAlign:'center',fontSize:16,marginTop:20}}>
                 They help make your interests more secure in the palm of your hands and elsewhere
             </p>
-            <Grid style={{marginTop:100}} container direction justify='center' alignItems='center'>
+            <Grid style={{marginTop:70}} container direction justify='center' alignItems='center'>
                 <Grid style={{padding:20}} xs={6} md={2} justify='center' alignContent='center'>
                     <div style={{display:'grid',placeItems:'center'}}>
                     <Image layout='intrinsic' width={200} height={100} style={{}} src={thawte} />
@@ -110,12 +108,12 @@ const Security = () => {
                 </p>
                 </Grid>
                 <Grid style={{display:'grid',placeItems:'center'}} xs={12} md={6}  item>
-                   <Paper elevation={20} style={{}} className='security-paper'>
+                   <Paper elevation={20} style={{}} className='security-paper1'>
                    <Image  src={cert} width={500} height={700} layout='intrinsic' />
                    </Paper>
                 </Grid>
                 <Grid  style={{display:'grid',placeItems:'center'}} xs={12} md={6}  item>
-                   <Paper elevation={20} style={{padding:0}} className='security-paper'>
+                   <Paper elevation={20} style={{padding:0}} className='security-paper2'>
                    <Image  src={bsi} width={500} height={700} layout='intrinsic' />
                    </Paper>
                 </Grid>

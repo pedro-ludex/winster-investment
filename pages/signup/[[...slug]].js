@@ -732,9 +732,9 @@ canvasClassName='particle-canvas'
          }}  >
      
            
-             <h3 className='reg-header'  style={{marginTop:10,textAlign:'center'}}>
+             <h4 className='reg-header'  style={{marginTop:10,textAlign:'center'}}>
               <span style={{color:'#ffab00',textAlign:'center'}}>Register</span> for an account
-             </h3>
+             </h4>
            
              <Formik initialValues={{name:'',email:'',password:'',nextPassword:'',username:'',country:''}} onSubmit={(values)=>{
                        let user={
@@ -784,7 +784,7 @@ canvasClassName='particle-canvas'
                            // })
                            Router.push('../success')
                            }
-                           else if(res.data=='THAT EMAILL ADDRESS IS TAKEN'){
+                           else if(res.data=='THAT EMAIL ADDRESS IS TAKEN'){
                            alert('Sorry the email address or username is already taken')
                             setLoading({
                              pending:false,

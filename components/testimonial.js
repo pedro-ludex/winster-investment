@@ -25,9 +25,9 @@ const Testimonials = () => {
 
     return (
         <div style={{margin:60,marginTop:-40}}>
-            <h3 style={{textAlign:'center',marginBottom:80}}>
+            <h4 style={{textAlign:'center',marginBottom:80}}>
               Top rated investors of <span style={{color:'#ffab00'}}>October</span>
-            </h3>
+            </h4>
             <Grid direction='row' container justify='center' alignItems>
                 <Grid className='testimonial-grid' style={{zIndex:1000}} container justify='center' alignItems xs={12} md={3} >
                     <Paper className='countdown-bg1' style={{backgroundColor:'#131519',padding:20}} elevation={20} >
@@ -39,12 +39,12 @@ const Testimonials = () => {
                         </Grid>
                         <Grid>
                             <div style={{fontSize:20,color:'white',margin:10}}>
-                                <span style={{color:'#ffab00'}}>Aiden showam</span> 
+                                <span style={{color:'#ffab00'}}>Aiden Showam</span> 
                                 <Divider light style={{backgroundColor:'#ffab00',opacity:0.5,width:'80%'}} variant='' />
                             </div>
                             <Grid container alignItems='center' style={{fontSize:18,color:'white',margin:10}}>
                                 <span style={{}}>Level:</span> <Rating style={{}} size='medium' emptyIcon={<StarBorderIcon style={{color:'#ffab00'}} 
-                                fontSize="inherit" />} defaultValue={4.5} 
+                                fontSize="inherit" />} defaultValue={5.0} 
                                 precision={0.5} readOnly max={5} />
 
                             </Grid>
@@ -84,7 +84,7 @@ const Testimonials = () => {
                         </Grid>
                         <Grid>
                             <div style={{fontSize:20,color:'white',margin:10}}>
-                                <span style={{color:'#ffab00'}}>hilda vought</span> 
+                                <span style={{color:'#ffab00'}}>Hilda Vought</span> 
                                 <Divider light style={{backgroundColor:'#ffab00',opacity:0.5,width:'80%'}} variant='' />
                             </div>
                             <Grid container alignItems='center' style={{fontSize:18,color:'white',margin:10}}>
@@ -128,7 +128,7 @@ const Testimonials = () => {
                         </Grid>
                         <Grid>
                             <div style={{fontSize:20,color:'white',margin:10}}>
-                                <span style={{color:'#ffab00'}}>judith creeman</span> 
+                                <span style={{color:'#ffab00'}}>Ayush Murtas</span> 
                                 <Divider light style={{backgroundColor:'#ffab00',opacity:0.5,width:'80%'}} variant='' />
                             </div>
                             <Grid container alignItems='center' style={{fontSize:18,color:'white',margin:10}}>
@@ -168,7 +168,7 @@ const Testimonials = () => {
                         </Grid>
                         <Grid>
                             <div style={{fontSize:20,color:'white',margin:10}}>
-                                <span style={{color:'#ffab00'}}>katka walter</span> 
+                                <span style={{color:'#ffab00'}}>Katka Walter</span> 
                                 <Divider light style={{backgroundColor:'#ffab00',opacity:0.5,width:'80%'}} variant='' />
                             </div>
                             <Grid container alignItems='center' style={{fontSize:18,color:'white',margin:10}}>

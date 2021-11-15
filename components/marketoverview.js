@@ -8,9 +8,9 @@ import {Grid} from '@material-ui/core'
 const Overview = (props) => {
     return (
             <div style={{display:'grid',placeItems:"center",marginTop:50}}>
-                <h3 style={{marginBottom:40}}>
+                <h4 style={{marginBottom:40}}>
                     Market Overview
-                </h3>
+                </h4>
                 <p style={{fontSize:16,padding:10,textAlign:'center',marginBottom:60}} >
                     view and analyse real time market data
                 </p>

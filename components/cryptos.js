@@ -7,9 +7,9 @@ const Cryptos = () => {
     return (
         <Grid container justify='center' className='crypto-marke' style={{marginTop:60}} >
            <Grid container justify='center'>
-           <h3 style={{textAlign:'center'}} className='crypto-heading'>
+           <h4 style={{textAlign:'center'}} className='crypto-heading'>
                     Live Cryptocurrency Market Data
-                </h3>
+                </h4>
            </Grid>
                    <div>
                    <p style={{textAlign:'center'}}>
@@ -19,7 +19,7 @@ const Cryptos = () => {
                 
               
               <Grid style={{padding:10}}  justify='center' container>
-                  <div style={{width:'90%',height:430}}>
+                  <div className='market-table' style={{height:430}}>
                   <CryptoCurrencyMarket colorTheme="dark" width='100%' height={430} isTransparent={true}></CryptoCurrencyMarket>
                   </div>
                     </Grid>

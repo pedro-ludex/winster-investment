@@ -738,9 +738,9 @@ canvasClassName='particle-canvas'
           </div>
           <div style={{}} className="col-lg-6 col-md-12 col-sm-12 col-xs-6">
             <header style={{}} className="heading-talk crumina-module crumina-heading heading--h1  heading--with-decoration winster-header">
-              <h1 className=" heading-title f-size-90 weight-normal no-margin">Winster<br/>
-                <span className="weight-bold">Trade</span></h1>
-              <h2 className="c-primary">Investment solutions</h2>
+              <h2 className=" heading-title f-size-90 weight-normal no-margin">Winster<br/>
+                <span className="weight-bold">Trade</span></h2>
+              <h3 className="c-primary">Investment solutions</h3>
             </header>
           
           </div>
@@ -872,14 +872,14 @@ canvasClassName='particle-canvas'
           <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 mb30">
             <header className="crumina-module crumina-heading heading--h2 heading--with-decoration">
              
-              <h2 style={{textAlign:'center',marginBottom:40}} className="heading-title weight-normal">Introducing Safemoon tokens
-              </h2>
+              <h4 style={{textAlign:'center',marginBottom:40}} className="heading-titl weight-normal">Introducing Safemoon tokens
+              </h4>
               <Grid container justify='center'>
                 <motion.div style={{display:'grid',placeItems:'center'}} transition={{duration:40}} animate={{rotateY:[360,0,360,0,360,360,0,360,0,360,360,0,360,0,360,360,0,360,0,360]}}>
                 <Image priority={true} src={moon} height={150} width={150} layout='intrinsic' />
                 </motion.div>
               </Grid>
-              <div className="heading-text">Flexible decentralized currency which scales on every transaction and referal you make
+              <div style={{fontSize:18}} className="heading-text">Flexible decentralized currency which scales on every transaction and referal you make
               You can accumulate Safemoon tokens by making deposits and making referals, and as your balance increases so do your tokens
               </div>
               <Grid style={{marginTop:30,}} container justify='center' direction='row'>

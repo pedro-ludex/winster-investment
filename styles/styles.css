@@ -274,7 +274,7 @@ input:-webkit-autofill
     padding:20px;
     background-color: #131519;
     padding-bottom: 40px;
-    height: 600px;
+    height: 500px;
   }
   .reset-paper {
     width: 90%;
@@ -291,8 +291,24 @@ input:-webkit-autofill
   .reset-input {
     margin-bottom: 50px;
   }
-  .security-paper {
-    margin: 30px;
+  .security-paper1 {
+    
+    height: 400px;
+    width: 250px;
+  }
+  .security-paper1:hover {
+    height: 700px;
+    width: 500px;
+  }
+
+  .security-paper2 {
+    
+    height: 400px;
+    width: 250px;
+  }
+  .security-paper2:hover {
+    height: 700px;
+    width: 500px;
   }
   .price-valu {
     color: #ffab00;
@@ -497,19 +513,19 @@ input:-webkit-autofill
 }
 .nav-link {
   
-    position: relative;
+    /* position: relative;
     color: white;
     margin: 30px;
-    /* margin-top: 30px; */
+   
     font-weight: 400;
     font-size: 14px;
-    /* textTransform: uppe; */
+    
     border-radius: 3px;
     line-height: 20px;
     text-decoration: none;
-    /* margin: 0px; */
+    
     display: inline-flex;
-    border-bottom: 1px solid #ffab00;
+    border-bottom: 1px solid #ffab00; */
 }
 
 .nav-link:hover {
@@ -518,13 +534,13 @@ input:-webkit-autofill
   font-size: 20px;
 }
 .appbar-container {
-  min-height: 50px;
+  /* min-height: 50px;
   flex: 1;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-around;
   display: flex;
   flex-wrap:nowrap;
-  margin-top: 10px;
+  margin-top: 10px; */
   
 }
 .depo-modal {
@@ -589,11 +605,25 @@ input:-webkit-autofill
   margin-top: 35px;
 }
 
+.market-table {
+  width: 90%;
+}
+.price-box {
+  border-radius: 10px;
+  background-color:rgb(23, 25, 31);
+  padding: 15px;
+}
+.earn-grid {
+  padding: 20px;
+}
 
 
 
 
-  
+
+
+
+
 
 
 
@@ -603,6 +633,28 @@ input:-webkit-autofill
 
 
   @media all and (min-width:800px){
+
+    .app-bar-main {
+      height: 45px;
+    }
+
+    .earn-grid {
+      padding: 0;
+    }
+
+    .price-valu {
+      color: #ffab00;
+      font-size: 20px;
+      text-align: center;
+      /* font-weight: 200; */
+    }
+
+
+
+
+    .market-table {
+      width: 80%;
+    }
     .testimonial-grid {
       margin-top: 0px;
     }
@@ -671,13 +723,13 @@ input:-webkit-autofill
       
     }
     .appbar-container {
-      min-height: 50px;
+      height: 40px;
       flex: 1;
       align-items: center;
       justify-content: space-evenly;
-      display: flex;
-      flex-wrap:nowrap;
-      margin-top: 10px;
+      /* display: flex;
+      flex-wrap:nowrap; */
+      /* margin-top: 10px; */
       
     }
     .nav-link {
@@ -686,11 +738,11 @@ input:-webkit-autofill
         margin: 10px;
         font-weight: 400;
         font-size: 14px;
-        /* textTransform: uppe; */
+        color: white;
         border-radius: 3px;
         line-height: 20px;
         text-decoration: none;
-        /* margin: 0px; */
+       
         display: inline-flex;
         border-bottom:none
     }
@@ -879,16 +931,18 @@ input:-webkit-autofill
   }
 
   .choose-icon {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     color: #ffab00;
   
   }
   .choose-heading {
-    margin-bottom: 50px;
+    margin-bottom: 20;
   }
   .security {
-    margin-top: 150px;
+    margin-top: 60px;
+    padding: 40px;
+    margin-bottom: -150px;
   }
   .getting-started-header {
     margin-bottom: 80px;
@@ -927,8 +981,8 @@ input:-webkit-autofill
   .affili {
     padding:20px;
     background-color: #131519;
-    padding-bottom: 40px;
-  
+    padding-bottom: 0;
+    
   }
   .reset-paper {
     width: 40%;
@@ -962,8 +1016,8 @@ input:-webkit-autofill
     background-image: url(../img/world.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 550px;
-    width: 500px
+    height: 450px;
+    width: 400px
   }
   .count-paper {
     width: 90%;
@@ -994,8 +1048,8 @@ input:-webkit-autofill
     place-items: flex-end;
 }
 .winster-main-logo {
-    width: 400px;
-    height: 400px;
+    width: 330px;
+    height: 330px;
     position: relative;
     margin-top: -40px;
 }
@@ -1003,7 +1057,9 @@ input:-webkit-autofill
   padding: 100px;
 }
 .bonus-p {
-  text-align: start
+  text-align: start;
+  font-size: 18px;
+  
 }
 
 .interest-header {

@@ -39,16 +39,16 @@ const Plans = (props) => {
 
   <div style={{}} className="container">
     <div className="row medium-padding100">
-    <h3 style={{textAlign:'center',marginBottom:60}}>
+    <h4 style={{textAlign:'center',marginBottom:60}}>
                Plans suited for everyone
-             </h3>
+             </h4>
       <div style={{padding:40}} className="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30" data-mh="pricing-item">
         <div style={{}} className="crumina-module crumina-pricing-table pricing-table--style1">
           <div className="pricing-thumb">
           <Filter1Icon style={{width:70,height:70,color:'#ffab00'}} />
           </div>
           <h5 className="pricing-title">Starter <span></span></h5>
-          <div className="price">
+          <div className="price-box">
             <div className="price-sup-title">Amount spent:</div>
             <div className="price-valu">$200-$999</div>
           </div>
@@ -72,7 +72,7 @@ const Plans = (props) => {
               </div>
             </li>
           </ul>
-          <a onClick={()=>{Router.push(`/signup/${props.bomber}`)}} className="btn btn--large btn--gree-light btn--transparent">Join now</a>
+          <a onClick={()=>{Router.push(`/signup/${props.bomber}`)}} className="btn btn--larg btn--gree-light btn--transparent">Join now</a>
         </div>
       </div>
       <div style={{padding:40}} className="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30" data-mh="pricing-item">
@@ -81,7 +81,7 @@ const Plans = (props) => {
            <Filter2Icon style={{width:70,height:70,color:'#ffab00'}} />
           </div>
           <h5 className="pricing-title"> Standard < span></span></h5>
-          <div className="price">
+          <div className="price-box">
             <div className="price-sup-title">Amount spent:</div>
             <div className="price-valu">$1000-$4999</div>
           </div>
@@ -105,7 +105,7 @@ const Plans = (props) => {
               </div>
             </li>
           </ul>
-          <a onClick={()=>{Router.push(`/signup/${props.bomber}`)}} className="btn btn--large btn--gree-light btn--transparent">Join now</a>
+          <a onClick={()=>{Router.push(`/signup/${props.bomber}`)}} className="btn btn--larg btn--gree-light btn--transparent">Join now</a>
         </div>
       </div>
 
@@ -116,8 +116,8 @@ const Plans = (props) => {
           <div className="pricing-thumb">
             <Filter3Icon style={{width:70,height:70,color:'#ffab00'}} />
           </div>
-          <h5 className="pricing-title">Share Holder<span></span></h5>
-          <div className="price">
+          <h5 className="pricing-title">Investor<span></span></h5>
+          <div className="price-box">
             <div className="price-sup-title">Amount Spent:</div>
             <div className="price-valu">$5000-$19999</div>
           </div>
@@ -141,7 +141,7 @@ const Plans = (props) => {
               </div>
             </li>
           </ul>
-          <a onClick={()=>{Router.push(`/signup/${props.bomber}`)}} className="btn btn--large btn--gree-light btn--transparent">Join now</a>
+          <a onClick={()=>{Router.push(`/signup/${props.bomber}`)}} className="btn btn--larg btn--gree-light btn--transparent">Join now</a>
         </div>
       </div>
       <div style={{padding:40}} className="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30" data-mh="pricing-item">
@@ -150,9 +150,9 @@ const Plans = (props) => {
            <Filter4Icon style={{width:70,height:70,color:'#ffab00'}} />
           </div>
           <h5 className="pricing-title">VIP<span></span></h5>
-          <div className="price">
+          <div className="price-box">
             <div className="price-sup-title">Amount Spent:</div>
-            <div className="price-valu">$20000-$50000</div>
+            <div className="price-valu">$20k-$50k</div>
           </div>
           <ul className="pricing-tables-position">
             <li className="position-item">
@@ -170,11 +170,11 @@ const Plans = (props) => {
             <li className="position-item">
               <div className="currency-details-item">
                 <h6 className="title">Duration:</h6>
-                <h6 className="value">Life time partner</h6>
+                <h6 className="value">Life time</h6>
               </div>
             </li>
           </ul>
-          <a onClick={()=>{Router.push(`/signup/${props.bomber}`)}} className="btn btn--large btn--gree-light btn--transparent">Join now</a>
+          <a onClick={()=>{Router.push(`/signup/${props.bomber}`)}} className="btn btn--larg btn--gree-light btn--transparent">Join now</a>
         </div>
       </div>
     </div>

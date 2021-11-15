@@ -16,9 +16,9 @@ const Affiliate = () => {
             <Grid style={{display:'grid',placeItems:'center',}} item md={6} className="">
             <header className="crumina-module crumina-heading heading--h2 heading--with-decoration">
               <div className="heading-sup-title">Affiliate Program</div>
-              <h2 className="heading-title weight-normal">Extending your reach
-                </h2>
-              <div className="heading-text">
+              <h4 className="heading-title weight-normal">Extending your reach
+                </h4>
+              <div style={{fontSize:18}} className="heading-text">
               You may use, reproduce and share any links to any page of this Website. You should use Your individual referral link to take part in the affiliate program. The affiliate program is a way to get extra earnings for referring other people to the products and services offered through this Website.
               </div>
             </header>

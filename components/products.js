@@ -204,9 +204,9 @@ const Products = (props) => {
                                              <div style={{display:'grid',placeItems:'center'}}>
                                              <Image width={100} height={100} src={crypto} layout='intrinsic' />
                                              </div>
-                                             <h5 style={{textAlign:'center' ,color:'#ffab00',marginTop:40}}>
+                                             <h6 style={{textAlign:'center' ,color:'#ffab00',marginTop:40}}>
                                                   Crypto mining
-                                             </h5>
+                                             </h6>
                                              <div style={{color:'white',textAlign:'center'}}>
                                                 Fast and efficient mining solutions using the latest technologies and hardware with steady rates and no hidden charges
                                              </div>
@@ -231,9 +231,9 @@ const Products = (props) => {
                                              <div style={{display:'grid',placeItems:'center'}}>
                                              <Image width={100} height={100} src={invest} layout='intrinsic' />
                                              </div>
-                                             <h5 style={{textAlign:'center' ,color:'#ffab00',marginTop:40}}>
+                                             <h6 style={{textAlign:'center' ,color:'#ffab00',marginTop:40}}>
                                                  Crypto Investments
-                                             </h5>
+                                             </h6>
                                              <div style={{color:'white',textAlign:'center'}}>
                                              Invest in our crypto trades and get live trade data and analysis with a 25% guarantee in all our investments.
                                              </div>
@@ -259,9 +259,9 @@ const Products = (props) => {
                                              <div style={{display:'grid',placeItems:'center'}}>
                                              <Image width={100} height={100} src={currency} layout='intrinsic' />
                                              </div>
-                                             <h5 style={{textAlign:'center' ,color:'#ffab00',marginTop:40 }}>
+                                             <h6 style={{textAlign:'center' ,color:'#ffab00',marginTop:40 }}>
                                                  Crypto Transactions
-                                             </h5>
+                                             </h6>
                                              <div style={{color:'white',textAlign:'center'}}>
                                              Conduct live crypto and cash transactions which are completely transparent and encrypted.
                                              </div>
@@ -286,9 +286,9 @@ const Products = (props) => {
                                              <div style={{display:'grid',placeItems:'center'}}>
                                              <Image width={100} height={100} src={chart} layout='intrinsic' />
                                              </div>
-                                             <h5 style={{textAlign:'center',color:'#ffab00',marginTop:40}}>
+                                             <h6 style={{textAlign:'center',color:'#ffab00',marginTop:40}}>
                                                  Crypto Trading
-                                             </h5>
+                                             </h6>
                                              <div style={{color:'white',textAlign:'center'}}>
                                              Access our AI integrated crypto trading charts and trading signals, predicted by a state of the art Artificial inteligence model
                                              </div>

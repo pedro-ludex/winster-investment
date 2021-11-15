@@ -38,7 +38,7 @@ function MyFooter(props) {
           icon: (
             <PhoneIcon style={{color:'#9a7801',width:25,height:25,}} />
           ),
-         title:' Phone: +48732121453',
+         title:' Phone: +4873212145377',
          
           openExternal:false,
           className:'main-footer',
