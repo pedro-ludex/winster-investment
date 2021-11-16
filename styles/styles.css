@@ -219,10 +219,15 @@ input:-webkit-autofill
     height: 100%;
     overflow: hidden;
   }
+
+  .balance-paper {
+    /* margin-left: 23px; */
+    width: 95%;
+   }
    
   .drawer-app-content {
     flex: auto;
-    overflow: auto;
+    overflow: hidden;
     
     
   }
@@ -256,6 +261,7 @@ input:-webkit-autofill
   }
   .security {
     margin-top: 60px;
+    margin-bottom: -70px;
   }
   .getting-started-header {
     margin-bottom: 40px;
@@ -275,6 +281,7 @@ input:-webkit-autofill
     background-color: #131519;
     padding-bottom: 40px;
     height: 500px;
+    margin-bottom: 250px;
   }
   .reset-paper {
     width: 90%;
@@ -293,22 +300,24 @@ input:-webkit-autofill
   }
   .security-paper1 {
     
-    height: 400px;
-    width: 250px;
+    height: 250px;
+    width: 200px;
+    margin: 30px;
   }
   .security-paper1:hover {
-    height: 700px;
-    width: 500px;
+    height: 400px;
+    width: 300px;
+    
   }
 
   .security-paper2 {
-    
-    height: 400px;
-    width: 250px;
+    margin: 30px;
+    height: 250px;
+    width: 200px;
   }
   .security-paper2:hover {
-    height: 700px;
-    width: 500px;
+    height: 400px;
+    width: 300px;
   }
   .price-valu {
     color: #ffab00;
@@ -425,7 +434,8 @@ input:-webkit-autofill
   /* background-image: url(../img/steps.svg); */
   
   height: max-content;
-  padding: 90px;
+  padding: 65px;
+  /* padding-bottom: -40px; */
 
 }
 .minichart {
@@ -513,7 +523,7 @@ input:-webkit-autofill
 }
 .nav-link {
   
-    /* position: relative;
+    position: relative;
     color: white;
     margin: 30px;
    
@@ -525,7 +535,7 @@ input:-webkit-autofill
     text-decoration: none;
     
     display: inline-flex;
-    border-bottom: 1px solid #ffab00; */
+    border-bottom: 1px solid #ffab00;
 }
 
 .nav-link:hover {
@@ -534,13 +544,13 @@ input:-webkit-autofill
   font-size: 20px;
 }
 .appbar-container {
-  /* min-height: 50px;
+  height: 100%;
   flex: 1;
   align-items: center;
   justify-content: space-around;
   display: flex;
   flex-wrap:nowrap;
-  margin-top: 10px; */
+  margin-top: 10px;
   
 }
 .depo-modal {
@@ -554,6 +564,7 @@ input:-webkit-autofill
 }
 .asset-grid {
   margin-left: 12px;
+  margin-top: -40px;
 }
 
 .coin-grid {
@@ -616,8 +627,12 @@ input:-webkit-autofill
 .earn-grid {
   padding: 20px;
 }
-
-
+.dashboard-body {
+  margin-top: 40px;
+}
+.balance-head {
+  font-size: large;
+}
 
 
 
@@ -633,6 +648,64 @@ input:-webkit-autofill
 
 
   @media all and (min-width:800px){
+
+
+    .affili-link {
+      font-size: 10;
+    }
+    .bottom-dashboard {
+      margin-top: 100px;
+    }
+    .balance-head {
+      font-size: medium;
+    }
+    .top-balance {
+      height: 400px;
+      width: 70%;
+    }
+    .drawer-app-content {
+      flex: auto;
+    overflow: visible;
+      
+    }
+    .dashboard-body {
+      margin-left: -50px;
+      width: 85vw;
+    }
+    .drawer-container {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      overflow: hidden;
+      /* width: 100px; */
+    }
+
+    .dash-toolbar {
+      margin-top: -10px;
+    }
+
+    .testimonials {
+      margin-top: -170px;
+    }
+    .security-paper1 {
+    
+      height: 400px;
+      width: 250px;
+    }
+    .security-paper1:hover {
+      height: 700px;
+      width: 500px;
+    }
+  
+    .security-paper2 {
+      
+      height: 400px;
+      width: 250px;
+    }
+    .security-paper2:hover {
+      height: 700px;
+      width: 500px;
+    }
 
     .app-bar-main {
       height: 45px;
@@ -699,7 +772,8 @@ input:-webkit-autofill
       height: 500px;
     }
     .asset-grid {
-      margin-left: 0px
+      margin-left: 0px;
+      margin-top:0;
     }
     
     .content-container {
@@ -797,7 +871,7 @@ input:-webkit-autofill
     }
 
     .app-bar {
-      height:60px
+      height:45px
     }
     .product-grid{
       /* background: linear-gradient(#131519 70%,#131519,  #ffba00 ); */
@@ -843,7 +917,7 @@ input:-webkit-autofill
     margin-left: 20px;
   }
   .container-p {
-    margin-left: 150px;
+   
   }
   .success-paper {
     margin-top: 120px;
@@ -874,6 +948,7 @@ input:-webkit-autofill
   
   .balance-paper {
    margin-left: 23px;
+   width: 100%;
   }
   .faqs-accordion {
     background-color: rgba(0, 0, 0, 0);
@@ -982,7 +1057,7 @@ input:-webkit-autofill
     padding:20px;
     background-color: #131519;
     padding-bottom: 0;
-    
+    margin-bottom: -100px
   }
   .reset-paper {
     width: 40%;
@@ -1074,15 +1149,16 @@ input:-webkit-autofill
   /* width: 500px; */
 }
 .asset-paper {
-  margin-top: 35px;
+  margin-top:0px;
   border: 3px solid #ffab00;
  background-color: black;
   background-image: linear-gradient(black 80%,black);
   /* background-image: url(../img/steps.svg); */
-  padding:50px;
+  padding:20px;
   height: max-content;
   padding-top: 40px;
-  padding-bottom: 70px;
+  padding-bottom: 55px;
+  margin-right: -35px;
 
 
 }

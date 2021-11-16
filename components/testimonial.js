@@ -24,7 +24,7 @@ const Testimonials = () => {
     let date=`${year}${month}${day}`
 
     return (
-        <div style={{margin:60,marginTop:-40}}>
+        <div className='testimonials' style={{margin:60}}>
             <h4 style={{textAlign:'center',marginBottom:80}}>
               Top rated investors of <span style={{color:'#ffab00'}}>October</span>
             </h4>

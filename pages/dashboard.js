@@ -34,7 +34,8 @@ import Button from '@material-ui/core/IconButton'
 import ExitToAppIcon from '@material-ui/icons/ExitToAppOutlined'
 
 import LocalAtmIcon from '@material-ui/icons/LocalAtmOutlined'
-import StarBorderIcon from '@material-ui/icons/StarBorder';
+import Rating from '@material-ui/lab/Rating';
+import StarBorderIcon from '@material-ui/icons/StarBorderOutlined'
 import BarChartIcon from '@material-ui/icons/BarChart'
 
 import Image from 'next/image'
@@ -356,14 +357,14 @@ const Dashboard=({data})=>{
     const appContent=()=>{
        if(content=='Balance'){
            return (
-               <Grid justify='center' container spacing={3} className='container-p'  style={{padding:5,marginTop:60,width:'100%'}} >
+               <Grid container spacing={3} className='container-p'  style={{padding:5,marginTop:10,width:'100%'}} >
                 
-                   <Grid  className='top-row' justify='flex-start' style={{height:'auto',padding:10,}} container direction='row' spacing={3}>
+                   <Grid  className='top-row' justify='flex-start' style={{height:'auto',padding:10}} container direction='row' spacing={3}>
                      
-                   <Grid className='top-balance' justify='center' spacing={3} style={{height:400,width:'100%',}} item xs={12} md={4}>
+                   <Grid className='top-balance' justify='center' spacing={3} style={{}} item xs={12} md={3}>
                      
               <Grid style={{}} container className='c-grid'>
-              <Paper style={{width:'95%'}}  className='profile-paper balance-paper'>
+              <Paper style={{}}  className='profile-paper balance-paper'>
   <Grid direction='row' style={{padding:5,}} container>
       <Grid md={2} xs={2} style={{}} item>
           <div>
@@ -372,10 +373,10 @@ const Dashboard=({data})=>{
           </div>
       </Grid>
       <Grid md={6} xs={6} style={{}} item>
-          <div style={{margin:5,marginBottom:-20}}>
-          <h5>
+          <div style={{margin:5,marginBottom:-15}}>
+          <h6 className='balance-head'>
                   Balance
-              </h5>
+              </h6>
               {/* <Button style={{color:'white'}} onClick={()=>console.log(eth)}>
                   click
               </Button> */}
@@ -389,18 +390,18 @@ const Dashboard=({data})=>{
           </ToolTip> */}
       </Grid>
   </Grid>
-  <Grid style={{marginTop:-10}} direction='row' justify='center' alignItems='center' container>
+  <Grid style={{marginTop:10}} direction='row' justify='center' alignItems='center' container>
       <Grid style={{}}  md={2} xs={2}  item>
-          <AttachMoney className='dollar-sign' style={{height:50,width:50,color:'#ffab00',marginLeft:30,marginRight:10}} />
+          <AttachMoney className='dollar-sign' style={{height:40,width:40,color:'#ffab00',marginLeft:10,marginRight:10,marginBottom:-3}} />
 
       </Grid>
-      <Grid style={{marginLeft:15}} md={9} xs={9} item>
+      <Grid style={{marginLeft:5}} md={9} xs={9} item>
  {/* {gotten ?  : <h5>0.00</h5> } */}
  {/* <h3 className='balance-value'  >{data.balance}.00</h3> */}
  {
-   gotten ? <h4 className='balance-value'  >{info.balance}.00</h4>
+   gotten ? <h5 className='balance-value'  >{info.balance}.00</h5>
    :
-   <h4 className='balance-value'  >0.00</h4>
+   <h5 className='balance-value'  >0.00</h5>
  }
  
       </Grid>
@@ -409,58 +410,40 @@ const Dashboard=({data})=>{
 
 
   <Grid justify='center' alignItems='center' id='level' style={{marginLeft:1,marginTop:10}} direction='row' container>
-  <Grid 
- // justify='flex-end' alignItems='flex-end' 
-  item md={2} xs={2} style={{color:'white',marginLeft:5,marginBottom:-5}}>
-           Level
-          </Grid>
-
-          <Grid justify='center' alignItems='center' item md={2} xs={2} style={{color:'white'}}>
-              
-          <StarBorderIcon style={{marginTop:9,color:'#ffff'}}  />
-          </Grid>
-
-
-          <Grid justify='center' alignItems='center' item md={2} xs={2} style={{color:'white',}}>
-              <ToolTip title='last deposit'>
-                  <IconButton>
-                  <HourglassEmptyIcon style={{marginTop:9,color:'#ffab00'}}  />
-                  </IconButton>
-              </ToolTip>
-          
-          </Grid>
-
-          <Grid justify='center' alignItems='center' item md={4} xs={4} style={{color:'white',marginBottom:-9}}>
-              22/9/2021
-         
-          </Grid>
+    <Grid xs={4} md={4} item>
+      <p style={{color:'white',marginLeft:10}}>
+        Rating
+      </p>
+    </Grid>
+    
+    <Grid xs={8} md={8} item>
+      <div style={{marginTop:-16}}>
+      <Rating style={{}} size='small' emptyIcon={<StarBorderIcon style={{color:'#ffab00'}} 
+                                fontSize="inherit" />} defaultValue={0.5} 
+                                precision={0.5} readOnly max={5} />
+      </div>
+    </Grid>
   </Grid>
 
 
-  <Grid id='progress' style={{marginLeft:15}} direction='row' container>
-  <Grid item md={3} xs={3} style={{color:'white',}}>
-              Progress
-          
-          </Grid>
-
-          <Grid justify='center' alignItems='center' item md={9} xs={9} style={{color:'white'}}>
-              
-          <LinearProgress color='primary'  style={{height:10,width:'75%',marginTop:9,color:'#ffab00'}} variant="determinate" value={gotten ? info.level : 0} />
-          </Grid>
-  </Grid>
-  <Grid id='progress' style={{marginLeft:15,marginTop:10}} direction='row' container>
-  <Grid item md={3} xs={3} style={{color:'white',}}>
-              Affiliate
+  
+  <Grid id='progress' style={{}} direction='row' container>
+  <Grid item md={12} xs={12} style={{color:'white',}}>
+             <p style={{textAlign:'center'}}>
+             Affiliate Progress
+             </p>
           
           
           </Grid>
 
-          <Grid justify='center' alignItems='center' item md={9} xs={9} style={{color:'white',}}>
+          <Grid justify='center' alignItems='center' item md={12} xs={12} style={{color:'white',}}>
               
-          <LinearProgress color='primary'  style={{height:10,width:'75%',marginTop:9,color:'#ffab00'}} variant="determinate" value={gotten ? info.level*2.7 : 0} />
+            <Grid style={{marginTop:-15}} container justify='center'>
+            <LinearProgress color='primary'  style={{height:10,width:'75%',color:'#ffab00'}} variant="determinate" value={gotten ? info.level*2.7 : 0} />
+            </Grid>
           </Grid>
   </Grid>
-  <p style={{color:'white',fontSize:16,textAlign:'center',margin:5,marginTop:30}}>
+  <p style={{color:'white',fontSize:16,textAlign:'center',margin:5,marginTop:20}}>
     Your referal link
   </p>
   <Grid direction='row' id='progress' style={{marginTop:-5}} container>
@@ -471,14 +454,14 @@ const Dashboard=({data})=>{
           <Grid  justify='center' alignItems='center' item md={12} xs={12} style={{marginTop:5,textAlign:'center'}}>
             
              
-              {
+              {/* {
                 gotten ?
                 <a className='affili-link' href={`https://winstertradeinvestment.com/${info.username}`} style={{textAlign:'center',color:'#ffab00'}}>
-                 winstertradeinvestment.com/{info.username}
+                 winstertradeinvestment.com<br/>/{info.username}
               </a>
               :
               null
-              }
+              } */}
 
           </Grid>
   </Grid>
@@ -489,7 +472,7 @@ const Dashboard=({data})=>{
               </Grid>
 </Grid>
 
-<Grid item style={{height:400,width:'85%'}}  direction='column' justify='flex-end'  xs={12} md={3}>
+<Grid item style={{height:400,}}  direction='column' justify='flex-end'  xs={12} md={4}>
 <Grid className='c-grid' justify='center'  style={{}} >
 <Paper elevation={0} xs={12} md={3} style={{height:170}} className='profile-paper'>
  
@@ -513,7 +496,7 @@ const Dashboard=({data})=>{
 </Grid>
 
 </Grid>
-<Grid item style={{height:400,width:'85%'}}  direction='column'  xs={12} md={3}>
+<Grid item style={{height:400,width:'85%'}}  direction='column'  xs={12} md={4}>
 <Grid className='c-grid' justify='center'>
 <Paper xs={12} md={3} style={{height:170}} className='profile-paper'>
   <Grid justify='center' container  alignItems='center' direction='row'>
@@ -535,7 +518,7 @@ const Dashboard=({data})=>{
 </Grid>
 
 
-<Grid style={{}} className='c-gri' xs={12} md={2} item justify='center'>
+<Grid style={{}} className='c-gri' xs={12} md={1} item justify='center'>
 
 {/* <Grid style={{padding:10}} container justify='center'></Grid> */}
 
@@ -544,15 +527,15 @@ const Dashboard=({data})=>{
 <Grid style={{}} direction='column' className='circlar' alignItems='center' container justify='center'>
 
 <Grid style={{marginBottom:50,marginTop:-30}} xs={12} md={12} className='circlar' item justify='center'>
-              <div  style={{width:90,height:90}}>
-              <h6 style={{textAlign:'center'}}>
+              <div  style={{width:70,height:70}}>
+              <h6 style={{textAlign:'center',fontSize:20}}>
      Assets
   </h6>
               <CircularProgressbarWithChildren
           
           styles={buildStyles({
             // Rotation of path and trail, in number of turns (0-1)
-            rotation: 0.25,
+            rotation: 1,
         
             // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
             strokeLinecap: 'butt',
@@ -579,9 +562,9 @@ const Dashboard=({data})=>{
 
 <div style={{marginTop:-14}}>
 {/* <Image  width={30} height={30} src={btcIcon} layout='intrinsic' /> */}
-<Account style={{marginTop:9,color:'#ffab00',width:30,height:30}}  />
+<Account style={{marginTop:3,color:'#ffab00',width:20,height:20}}  />
 </div>
-<div style={{color:'white',textAlign:'center',marginTop:-5,fontSize:15}}>
+<div style={{color:'white',textAlign:'center',marginTop:-5,fontSize:13}}>
   14%
 </div>
 
@@ -593,7 +576,7 @@ const Dashboard=({data})=>{
          </div>
      
               </Grid>
-              <p style={{color:'white',textAlign:'center',marginBottom:-0.5,fontSize:14}} >
+              <p style={{color:'white',textAlign:'center',marginBottom:-0.5,fontSize:12}} >
        24% more for loan request
      </p>
 
@@ -605,15 +588,15 @@ const Dashboard=({data})=>{
 
 
               <Grid style={{marginBottom:-10}} xs={12} md={12} className='circlar' container justify='center'>
-              <div  style={{width:90,height:90}}>
-              <h6 style={{textAlign:'center'}}>
+              <div  style={{width:70,height:70}}>
+              <h6 style={{textAlign:'center',fontSize:20}}>
      Bonus
   </h6>
               <CircularProgressbarWithChildren
           
           styles={buildStyles({
             // Rotation of path and trail, in number of turns (0-1)
-            rotation: 0.25,
+            rotation: 1,
         
             // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
             strokeLinecap: 'butt',
@@ -640,9 +623,9 @@ const Dashboard=({data})=>{
 
 <div style={{marginTop:-12}}>
 {/* <Image  width={30} height={30} src={btcIcon} layout='intrinsic' /> */}
-<CreditCard style={{marginTop:9,color:'#ffab00',width:30,height:30}}  />
+<CreditCard style={{marginTop:4,color:'#ffab00',width:20,height:20}}  />
 </div>
-<div style={{color:'white',textAlign:'center',marginTop:-7}}>
+<div style={{color:'white',textAlign:'center',marginTop:-7,fontSize:13}}>
   10%
 </div>
 
@@ -676,12 +659,12 @@ const Dashboard=({data})=>{
                    </Grid>
                    {/* <Grid container justify='flex-end' style={{backgroundColor:'blue'}}></Grid> */}
                     
-                   <Grid className='bottom-profi' spacing={3} justify='flex-end' style={{marginTop:10}} container direction='row'>
+                   <Grid className='bottom-dashboard' spacing={3} justify='flex-end' style={{marginTop:20}} container direction='row'>
 
 <Grid  style={{}} justify='center'  md={8} xs={12} item>
           <Grid style={{marginTop:-14,}} alignItems='center' container justify='center'>
-          <Paper style={{width:'100%',height:500,}} className='profile-paper coin-grid'>
-<CryptoCurrencyMarket colorTheme="dark" height={480} width="100%" isTransparent={true} ></CryptoCurrencyMarket>
+          <Paper style={{width:'100%',height:400,}} className='profile-paper coin-grid'>
+<CryptoCurrencyMarket colorTheme="dark" height={370} width="100%" isTransparent={true} ></CryptoCurrencyMarket>
 {/* <AdvancedRealTimeChart style={{}}  isTransparent theme="dark" width="100%" autosize></AdvancedRealTimeChart> */}
 </Paper>
           </Grid>
@@ -691,7 +674,7 @@ const Dashboard=({data})=>{
 
 <Grid xs={12} md={4} className='anal-grid' item justify='center'>
 <Grid style={{}} justify='center' container>
-<Paper style={{padding:0,marginTop:10,width:'90%',height:500}} className='profile-paper coin-grid'>
+<Paper style={{padding:0,marginTop:10,width:'90%',height:400}} className='profile-paper coin-grid'>
 
 <Grid style={{}} className='tech-grid' container justify='center'>
 
@@ -1519,7 +1502,7 @@ s0.parentNode.insertBefore(s1,s0);
                 //style={{height:50}}
                 className='app-bar'
             >
-                     <Toolbar>
+                     <Toolbar className='dash-toolbar'>
                        { phone ?
                           <IconButton style={{marginLeft:-20,marginRight:20}} onClick={toggleDrawer}>
                           <MenuIcon style={{height:30,width:30,color:"black"}} />
@@ -1610,7 +1593,7 @@ s0.parentNode.insertBefore(s1,s0);
           className='drawer-container'
           dismissible
           open={mobile}
-          style={{backgroundColor:'black',height:'140vh'}}
+          style={{backgroundColor:'black',height:'140vh',width:200}}
           onOpen={scrollTop}
           
           //className='drawer'
@@ -1641,7 +1624,7 @@ s0.parentNode.insertBefore(s1,s0);
                 {appContent()}
               </Grid> */}
         <DrawerAppContent className='drawer-app-content'>
-            <Grid container style={{}} >
+            <Grid className='dashboard-body' container style={{}} >
             {appContent()}
          
             </Grid>

@@ -880,7 +880,7 @@ canvasClassName='particle-canvas'
                 </motion.div>
               </Grid>
               <div style={{fontSize:18}} className="heading-text">Flexible decentralized currency which scales on every transaction and referal you make
-              You can accumulate Safemoon tokens by making deposits and making referals, and as your balance increases so do your tokens
+              You can accumulate Safemoon tokens by making deposits and making referals, and as your balance increases so do your tokens.
               </div>
               <Grid style={{marginTop:30,}} container justify='center' direction='row'>
                 <Grid container justify='center' xs={6} md={6}>

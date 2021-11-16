@@ -112,6 +112,7 @@ const Security = () => {
                    <Image  src={cert} width={500} height={700} layout='intrinsic' />
                    </Paper>
                 </Grid>
+                
                 <Grid  style={{display:'grid',placeItems:'center'}} xs={12} md={6}  item>
                    <Paper elevation={20} style={{padding:0}} className='security-paper2'>
                    <Image  src={bsi} width={500} height={700} layout='intrinsic' />
