@@ -38,6 +38,7 @@ import dots from '../img/dots.png'
 import Menu from "@material-ui/icons/Menu";
 import Mining from '../components/mining'
 import Fade from 'react-reveal/Fade'
+import CookieConsent, { Cookies } from "react-cookie-consent";
 
 
 //import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -722,13 +723,31 @@ canvasClassName='particle-canvas'
 	    }
 	/>
 
+  {/* cookie dialogue */}
 
+  <CookieConsent
+  location="bottom"
+  buttonText="I accept"
+  cookieName="user-acceptance"
+  style={{ background: "#131519" }}
+  //buttonStyle={{color: "#4e503b", fontSize: "13px" }}
+  buttonClasses='cookie-button'
+  expires={150}
+>
+  This website uses cookies to enhance the user experience.{" "}
+  
+</CookieConsent>
 
   
   {/* ... end Header */}
   <div className="main-content-wrappr">
       <Fade>
-      <section style={{}}  data-settings="particles-1" className="main-sectio alpha-heading crumina-flying-balls particles-js bg-  responsive-align-center">
+        {
+          mobile ?
+
+          
+          <div>
+              <section style={{}}  data-settings="particles-1" style={{}} className="main-sectio alpha-heading crumina-flying-balls particles-j bg-  responsive-align-center">
       <div style={{}} className="container top-container">
         <div className="row winster-top">
           <div style={{}} className="col-lg-6 col-md-12 col-sm-12 col-xs-6 logo-grid">
@@ -742,18 +761,55 @@ canvasClassName='particle-canvas'
                 <span className="weight-bold">Trade</span></h2>
               <h3 className="c-primary">Investment solutions</h3>
             </header>
-          
+        
           </div>
+
+          
       
         </div>
        
       </div>
-      
+
     </section>
-      </Fade>
-    <Grid style={{marginTop:30,marginBottom:10}} container justify='center'>
+    <Grid style={{marginTop:30,marginBottom:10,zIndex:1500}} container justify='center'>
           <a data-scroll href="/signup" className="btn btn--large btn--transparent btn--secondary">Get started</a>
+          
           </Grid>
+          </div>
+      :
+
+      
+      <section style={{}}  data-settings="particles-1" style={{marginTop:-2}} className="main-section alpha-heading crumina-flying-ball particles-j bg-  responsive-align-center">
+      <div style={{}} className="container top-container">
+        <div className="row winster-top">
+          <div style={{}} className="col-lg-6 col-md-12 col-sm-12 col-xs-6 logo-grid">
+            <div className='winster-main-logo' style={{}}>
+            <Image priority={true}  src={logo1} layout='fill' />
+            </div>
+          </div>
+          <div style={{}} className="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+            <header style={{}} className="heading-talk crumina-module crumina-heading heading--h1  heading--with-decoration winster-header">
+              <h2 className=" heading-title f-size-90 weight-normal no-margin">Winster<br/>
+                <span className="weight-bold">Trade</span></h2>
+              <h3 className="c-primary">Investment solutions</h3>
+            </header>
+        
+          </div>
+
+          <Grid style={{marginTop:30,marginBottom:10,zIndex:1500}} container justify='center'>
+          <a data-scroll href="/signup" className="btn btn--large btn--transparent btn--secondary">Get started</a>
+          
+          </Grid>
+      
+        </div>
+       
+      </div>
+     
+    </section>
+      
+        }
+      </Fade>
+   
        <div style={{margin:20}}>
 
        </div>

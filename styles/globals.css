@@ -228,10 +228,10 @@
 }
 .alpha-heading {
   margin-top: 70px;
-  background-image: url(../img/bg-help.png);
+  /* background-image: url(../img/bg-help.png);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 100%; */
 }
 .choose-icon {
   width: 100px;

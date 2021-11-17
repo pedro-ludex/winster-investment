@@ -88,7 +88,7 @@ const Counter = (props) => {
 
 
 
-            <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12 counter-object">
             <Grid container justify='center'>
                     <Image src={dist} width={150} height={150} layout='intrinsic'  />
                   </Grid>
@@ -102,7 +102,7 @@ const Counter = (props) => {
                 <div className="counter-line" />
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12 counter-object">
             <Grid container justify='center'>
                     <Image src={assets} width={150} height={150} layout='intrinsic'  />
                   </Grid>
@@ -144,7 +144,7 @@ const Counter = (props) => {
                 </Button> */}
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12 counter-object">
             <Grid container justify='center'>
                     <Image src={trans} width={150} height={150} layout='intrinsic'  />
                   </Grid>
@@ -158,7 +158,7 @@ const Counter = (props) => {
         />
                   <CountUp
   start={1}
-  end={5000}
+  end={50000}
   duration={1.7}
   //separator=" "
   decimals={0}

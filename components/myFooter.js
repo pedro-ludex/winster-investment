@@ -28,7 +28,7 @@ import 'rc-footer/assets/index.css';
 function MyFooter(props) {
 
   return (
-   <Grid style={{marginBottom:-180, zIndex:1000}} className='footer-background countdown-bg1'>
+   <Grid style={{marginBottom:-180, zIndex:1000}} className='footer-background'>
      <Footer
   className='main-footer'
     columns={[

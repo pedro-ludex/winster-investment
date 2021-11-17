@@ -108,9 +108,10 @@ input:-webkit-autofill
     
   }
   .dashboard-options{
-    border: #ffab00 3px solid;
+    border: #ffab00 2px solid;
     border-left: 0px;
-    background-color: black;
+    /* background-color: black; */
+    
     margin-top: 30px;
   }
   .profile-paper {
@@ -590,6 +591,7 @@ input:-webkit-autofill
   /* margin-top: auto;
   margin-bottom: 20px; */
   /* margin-top: -50px; */
+  
 }
 .tech-selector {
   border: 3px solid #ffab00;
@@ -633,12 +635,27 @@ input:-webkit-autofill
 .balance-head {
   font-size: large;
 }
+.bottom-dashboard {
+  margin-top: 20px;
+}
+.anal-paper {
+  /* margin-left: -40px; */
+  margin-left: 22px;
+}
+.dashboard-username {
+  font-size: 35px;
+}
 
+.counter-object {
+  margin-top: 100px;
+}
 
-
-
-
-
+.cookie-button {
+  background-color: #ffab00;
+  border-radius: 3px;
+  font-size: 13px;
+  color: black;
+}
 
 
 
@@ -649,12 +666,24 @@ input:-webkit-autofill
 
   @media all and (min-width:800px){
 
+    .counter-object {
+      margin-top: 0;
+    }
+
+    .anal-grid {
+     width: 800px;
+    }
+    .anal-paper {
+      /* margin-left: -40px; */
+      width: 700px;
+      margin-right: -30px;
+    }
 
     .affili-link {
       font-size: 10;
     }
     .bottom-dashboard {
-      margin-top: 100px;
+      margin-top: 80px;
     }
     .balance-head {
       font-size: medium;
@@ -750,7 +779,7 @@ input:-webkit-autofill
      background-color: #000022;
       background-image: linear-gradient(black 80%,black);
       /* background-image: url(../img/steps.svg); */
-      
+      width: 70%;
       height: auto;
       
       padding: 30px;
@@ -803,7 +832,8 @@ input:-webkit-autofill
       justify-content: space-evenly;
       /* display: flex;
       flex-wrap:nowrap; */
-      /* margin-top: 10px; */
+      margin-top: -5px;
+      
       
     }
     .nav-link {
