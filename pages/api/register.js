@@ -5,7 +5,13 @@ import users from '../../middleware/models';
 //const users =require('../../middleware/models')
 
 const Register = async (req, res) => {
- 
+
+  let today=new Date()
+  let year=today.getFullYear()+'/'
+  let time=today.getHours()+":"
+  let month=today.getMonth()+'/'
+  let day=today.getDate()
+  let reg_date=`${year}${month}${day}`
   
     const newUser=new users({
       
@@ -15,7 +21,8 @@ const Register = async (req, res) => {
      
       balance:req.body.user.balance,
       username:req.body.user.username,
-      bomber:req.body.user.bomber || ''
+      bomber:req.body.user.bomber || '',
+      date:reg_date
   
     })
     console.log(req.body.user)

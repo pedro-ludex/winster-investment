@@ -745,7 +745,7 @@ canvasClassName='particle-canvas'
                          username:values.username,
                          balance:0.00,
                          country:values.country,
-                         level:2
+                         //level:2
 
                         
                        }
@@ -817,8 +817,8 @@ canvasClassName='particle-canvas'
                        alert('All fields are required')
                      }}>
                        {({handleChange,handleSubmit,values,user})=>((
-                        <div>
-                          <FormControl style={{display:'grid',placeItems:'center',marginTop:150,padding:10}}>
+                        <div className='signup-container'>
+                          <FormControl  style={{display:'grid',placeItems:'center',padding:10}}>
                              <Grid   justify='center' alignItems='center' container>
                          <Grid justify='center' alignItems='center' style={{}} container direction='row'>
                         <Grid xs={12} md={6} style={{paddingRight:15}} justify='center' alignItems='center' container>
@@ -853,7 +853,9 @@ canvasClassName='particle-canvas'
                onChange={handleChange('username')}
                startAdornment={
                 <InputAdornment position="start">
-                 <PersonOutlined style={{color:"#ffab00"}} />
+                 <div style={{width:30}}>
+
+                 </div>
                 </InputAdornment>
               }
              />
@@ -1026,7 +1028,7 @@ canvasClassName='particle-canvas'
        </div>
        
    </div>
-   <div style={{backgroundColor:'red',width:'100%'}}>
+   <div className='countdownbg-1' style={{width:'100%'}}>
           <MyFooter />
           </div>
    </div>

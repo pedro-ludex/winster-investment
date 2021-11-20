@@ -186,6 +186,7 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();`}}/>
 
+<script type="module" defer src="https://cdn.jsdelivr.net/npm/@covemarkets/web-widgets@0.0.36/dist/market-ticker-tape/index.js"></script>
 
 
 
@@ -813,8 +814,13 @@ canvasClassName='particle-canvas'
        <div style={{margin:20}}>
 
        </div>
-       <Grid>
-         <TickerTape colorTheme='dark' />
+       <Grid className='tickertape' container>
+         {/* <TickerTape colorTheme='dark' /> */}
+         <cove-markets-market-ticker-tape
+         instrumentSelection="BTC-USD,ETH-USD,SOL-USD,ADA-USD,LTC-USD,USDT-USD"position="center"width="100%" maxWidth="900px" border="1px solid #ffab00"showBorder="true" backgroundColor='black'
+         >
+
+         </cove-markets-market-ticker-tape>
        </Grid>
             <Grid className='index-head' container justify='center' alignItems='center' style={{marginTop:20}}>
             
@@ -822,7 +828,9 @@ canvasClassName='particle-canvas'
           
            <Fade bottom >
            <p className={'talk'}  style={{fontSize:18,padding:10}}>
-            Welcome to winstertradeinvestment.com We are a company that focuses on the cryptocurrency sector. Our goal is to achieve the highest possible return from the Cryptocurrency exchange market. 
+           Winster Trade Investment is a Crypto Trading and Mining Company focused on offering global financial solutions and benefits for millions of investors. Our mission is to help our investors and clients invest their
+            money and resources in our crypto Trading and Mining solutions and we offer them risk free return with the support of our highly experienced team and well equipped facilities, With a robust trading portfolio we provide
+             risk free profits to our investors.
           </p>
            </Fade>
        

@@ -42,11 +42,15 @@ var user = new Schema({
     required:false,
   },
   country:{
-    trype:String,
+    type:String,
     required:false
   },
   level:{
-    trype:Number,
+    type:Number,
+    required:false
+  },
+  date:{
+    type:Date,
     required:false
   }
  

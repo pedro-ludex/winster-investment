@@ -42,7 +42,7 @@ const Faqs=()=> {
         </AccordionSummary>
         <AccordionDetails>
           <Typography variant='p' style={{color:'white'}}>
-          The winstertradeinvestment.com is modern investment program where you are able to make deposit and get the profit. Our Corporate Headquarters is located here: 63 kenton Road, Yorkshire, England 43-19. winstertradeinvestment.com LTD registration number is №12908756. Our goal is to achieve the highest return from the activity on the foreign currency exchange (Forex) and Cryptocurrency exchange markets. Our company is constantly evolving, it improves its marketing components and creates new investment proposals. All this makes the winstertradeinvestment.com an industry leader and to be able to adapt to the constantly changing market conditions.
+          Winster Trade Investment is a modern investment program where you are able to make Invest and Mine Crypto Currencies and get the profit. Our Corporate Headquarters is located here: 63 kenton Road, Yorkshire, England 43-19. winstertradeinvestment.com LTD registration number is №12908756. Our goal is to achieve the highest return from the activity on the Crypto Currency exchange markets. Our company is constantly evolving, it improves its marketing components and creates new investment proposals. All this makes Winster Trade Investment an industry leader able to adapt to the constantly changing market conditions.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -56,7 +56,7 @@ const Faqs=()=> {
         </AccordionSummary>
         <AccordionDetails>
           <Typography variant='p' style={{color:'white'}}>
-          The investment portfolio is managed by a team of experienced financial specialists and professional trade analysts who have been working on the currency exchange market for more than 10 years on average. Our experience and contacts ensure access for us to a wide range of local and global resources and bring about benefit from the world's best and most effective technologies of trading on the Forex and Cryptocurrency market.
+          The investment portfolio is managed by a team of experienced financial specialists and professional trade analysts who have been working on the currency exchange market for more than 5 years on average. Our experience and contacts ensure access for us to a wide range of local and global resources and bring about benefit from the world's best and most effective technologies of Trading and Mining Crypto Currencies.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -70,7 +70,7 @@ const Faqs=()=> {
         </AccordionSummary>
         <AccordionDetails>
           <Typography variant='p' style={{color:'white'}}>
-          Any person or company can participate in winstertradeinvestment.com We have no restrictions on any country. The only condition is accepting our terms of service.
+          Any person or company can participate in Winster Trade Investment We have no restrictions on any country. The only condition is accepting our terms of service.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -84,7 +84,7 @@ const Faqs=()=> {
         </AccordionSummary>
         <AccordionDetails>
           <Typography variant='p' style={{color:'white'}}>
-          First of all, you need to register a new account, select an investment plan and make a deposit at least $200 through the available payment systems. For details check the link: Get Started
+          First of all, you need to register a new account, select an investment plan and make a deposit of at least $200 through the available payment systems. For details check the link: Get Started
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -98,7 +98,7 @@ const Faqs=()=> {
         </AccordionSummary>
         <AccordionDetails>
           <Typography variant='p' style={{color:'white'}}>
-          Currently we have an introductory low deposit minimum amount of $200 and going up to $Unlimited which is the maximum allowed for a single deposit and depends on your investment plan. You are able to check min. and max. amount for each plan in our main page and your account menu.
+          Currently we have an introductory low deposit minimum amount of $200 and going up to $50,000 which is the maximum allowed for a single deposit and depends on your investment plan. You are able to check min. and max. amount for each plan.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -112,7 +112,7 @@ const Faqs=()=> {
         </AccordionSummary>
         <AccordionDetails>
           <Typography variant='p' style={{color:'white'}}>
-          the minimum amount for withdrawal is $10
+          the minimum amount for withdrawal is $300
           </Typography>
         </AccordionDetails>
       </Accordion>

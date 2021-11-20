@@ -439,30 +439,24 @@ const Dashboard=({data})=>{
           <Grid justify='center' alignItems='center' item md={12} xs={12} style={{color:'white',}}>
               
             <Grid style={{marginTop:-15}} container justify='center'>
-            <LinearProgress color='primary'  style={{height:10,width:'75%',color:'#ffab00'}} variant="determinate" value={gotten ? info.level*2.7 : 0} />
+            <LinearProgress color='primary'  style={{height:10,width:'75%',color:'#ffab00',borderRadius:3}} variant="determinate" value={gotten ? info.level*2.7 : 0} />
             </Grid>
           </Grid>
   </Grid>
-  <p style={{color:'white',fontSize:16,textAlign:'center',margin:5,marginTop:20}}>
-    Your referal link
-  </p>
-  <Grid direction='row' id='progress' style={{marginTop:-5}} container>
-  {/* <Grid item md={2} xs={2} style={{}}>
-  <PeopleOutline style={{color:'#ffab00',marginBottom:-20}} />
+  <Grid id='progress' style={{marginTop:20}} direction='row' container>
+  <Grid item md={12} xs={12} style={{color:'white',}}>
+             <p style={{textAlign:'center'}}>
+             Mining Progress
+             </p>
           
-          </Grid> */}
-          <Grid  justify='center' alignItems='center' item md={12} xs={12} style={{marginTop:5,textAlign:'center'}}>
-            
-             
-              {/* {
-                gotten ?
-                <a className='affili-link' href={`https://winstertradeinvestment.com/${info.username}`} style={{textAlign:'center',color:'#ffab00'}}>
-                 winstertradeinvestment.com<br/>/{info.username}
-              </a>
-              :
-              null
-              } */}
+          
+          </Grid>
 
+          <Grid justify='center' alignItems='center' item md={12} xs={12} style={{color:'white',}}>
+              
+            <Grid style={{marginTop:-15}} container justify='center'>
+            <LinearProgress color='primary'  style={{height:10,width:'75%',color:'#ffab00',borderRadius:3}} variant="determinate" value={4} />
+            </Grid>
           </Grid>
   </Grid>
 
@@ -1312,7 +1306,7 @@ onChange={handleChange('address')}
        else if(content=='Chart'){
          return (
            <Grid container justify='center' >
-             <Grid className='chart-row' style={{marginTop:80,}} id='pair' container direction='row'>
+             <Grid className='chart-row' style={{marginTop:40,}} id='pair' container direction='row'>
                                                
                                                <Grid className='coin-sel' xs={3} md={3} container justify='center' alignItems='center'>
                                                        {chart=='BTC' ?  

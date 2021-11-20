@@ -656,6 +656,14 @@ input:-webkit-autofill
   font-size: 13px;
   color: black;
 }
+.signup-container {
+  margin-top: 150px;
+}
+.login-container {
+  margin-top: 70px;
+}
+
+
 
 
 
@@ -666,6 +674,16 @@ input:-webkit-autofill
 
   @media all and (min-width:800px){
 
+    .tickertape {
+      margin-top: -50px;
+    }
+    .login-container {
+      margin-top: 40px;
+    }
+
+    .signup-container {
+      margin-top: 70px;
+    }
     .counter-object {
       margin-top: 0;
     }

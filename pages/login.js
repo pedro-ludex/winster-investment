@@ -682,7 +682,7 @@ canvasClassName='particle-canvas'
     }}  >
 
         <CardContent >
-        <h4 style={{marginTop:10,textAlign:'center',marginBottom:70}}>
+        <h4 style={{marginTop:10,textAlign:'center'}}>
         <span style={{color:'#ffab00',textAlign:'center'}}>Login</span> to your Account
         </h4>
         <Formik initialValues={{email:'',password:''}} onSubmit={(values)=>{
@@ -755,7 +755,7 @@ canvasClassName='particle-canvas'
                   alert('All fields are required')
                 }}>
                   {({handleChange,handleSubmit,values,user})=>((
-                   <div>
+                   <div className='login-container'>
                      <FormControl style={{display:'grid',placeItems:'center',padding:10}} >
                    
 <Input
@@ -802,6 +802,12 @@ canvasClassName='particle-canvas'
         <div style={{marginTop:20}}>
          <p style={{fontSize:16,textAlign:'center'}} className='heading-text'>
          Forgotten password? click <a href='/password_reset' style={{textDecoration:'none',color:'#ffab00'}}>here</a>
+         </p>
+        </div>
+
+        <div style={{marginTop:5}}>
+         <p style={{fontSize:16,textAlign:'center',marginTop:-10}} className='heading-text'>
+         Not yet a member? You can easily sign up <a href='/signup' style={{textDecoration:'none',color:'#ffab00'}}>here</a>
          </p>
         </div>
          <div style={{display:'grid',placeItems:'center',

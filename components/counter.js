@@ -118,12 +118,12 @@ const Counter = (props) => {
         />
                   <CountUp
   start={1}
-  end={3277}
+  end={1000}
   duration={1.7}
   //separator=" "
   decimals={0}
   isCounting={count}
-  
+  prefix={'$'}
   
   onEndComplete={() => setCounted(true)}
   //onStart={() => console.log('Started! 💨')}
@@ -132,10 +132,13 @@ const Counter = (props) => {
 
   
 </CountUp>
+<div className="units">
 
++
+ </div>
 
                 </div>
-                <h4 className="counter-title">Worth of assets</h4>
+                <h4 className="counter-title">Assets</h4>
                 
                 <div className="counter-line" />
                 {/* <Button onClick={()=>{setCount(true)}}>
