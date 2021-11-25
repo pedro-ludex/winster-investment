@@ -829,8 +829,9 @@ canvasClassName='particle-canvas'
            <Fade bottom >
            <p className={'talk'}  style={{fontSize:18,padding:10}}>
            Winster Trade Investment is a Crypto Trading and Mining Company focused on offering global financial solutions and benefits for millions of investors. Our mission is to help our investors and clients invest their
-            money and resources in our crypto Trading and Mining solutions and we offer them risk free return with the support of our highly experienced team and well equipped facilities, With a robust trading portfolio we provide
-             risk free profits to our investors.
+            money and resources in our crypto Trading and Mining solutions.
+            {/* and we offer them risk free return with the support of our highly experienced team and well equipped facilities, With a robust trading portfolio we provide
+             risk free profits to our investors. */}
           </p>
            </Fade>
        
