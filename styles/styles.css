@@ -552,7 +552,7 @@ input:-webkit-autofill
   display: flex;
   flex-wrap:nowrap;
   margin-top: 10px;
-  
+  background-color:#ffab00;
 }
 .depo-modal {
   width: 90%;
@@ -673,6 +673,10 @@ input:-webkit-autofill
 
 
   @media all and (min-width:800px){
+
+    .pay-con {
+      width: 100px;
+    }
 
     .tickertape {
       margin-top: -50px;
@@ -851,7 +855,7 @@ input:-webkit-autofill
       /* display: flex;
       flex-wrap:nowrap; */
       margin-top: -5px;
-      
+      background-color: rgba(0, 0, 0, 0);
       
     }
     .nav-link {

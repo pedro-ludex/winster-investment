@@ -150,7 +150,7 @@ const Login=()=> {
         
           header='Login'
           menu={ <Menu style={{color:'black'}} />}
-          image={<Image style={{marginLeft:'auto',marginRight:0}} src={white} width={50} height={40} layout='intrinsic' />}
+          //image={<Image style={{marginLeft:'auto',marginRight:0}} src={white} width={50} height={40} layout='intrinsic' />}
          rightLinks={<HeaderLinks />}   
 />
 
@@ -727,6 +727,13 @@ canvasClassName='particle-canvas'
                       }
                       else if(res.data.status=='WRONG DETAILS'){
                         alert('The password you have provided is incorect')
+                        setLoading({
+                          pending:false,
+                          done:false
+                        })
+                      }
+                      else if(res.data.status=='NO USER'){
+                        alert('Sorry there is no user with that Email please check the Email and try again')
                         setLoading({
                           pending:false,
                           done:false

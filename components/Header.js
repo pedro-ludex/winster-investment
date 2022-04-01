@@ -22,7 +22,7 @@ import Grid from '@material-ui/core/Grid'
 import Tooltip from '@material-ui/core/Tooltip'
 import Close from '@material-ui/icons/CloseOutlined'
 import ButtonIcon from '@material-ui/core/IconButton'
-
+import black from '../img/black.png'
 
 
 const useStyles = makeStyles(styles);
@@ -69,13 +69,17 @@ export default function Header(props) {
 
   
   return (
-    <AppBar className='app-bar-main' style={{boxShadow:'none'}} >
+    <AppBar className='app-bar-main' style={{boxShadow:'none',backgroundColor:'rgba(0,0,0,0)'}} >
       <Toolbar style={{color:'white'}} 
       //className={classes.container}
       className='appbar-container'
       >
        <Grid>
-       {props.image}
+       {
+         mobile ? <Image style={{marginLeft:'auto',marginRight:0}} src={black} width={50} height={40} layout='intrinsic' />
+         :
+         <Image style={{marginLeft:'auto',marginRight:0}} src={white} width={50} height={40} layout='intrinsic' />
+       }
        </Grid>
       {/* <div className={classes.flex}>
           {leftLinks !== undefined ? (

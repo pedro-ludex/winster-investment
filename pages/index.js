@@ -760,7 +760,7 @@ canvasClassName='particle-canvas'
             <header style={{}} className="heading-talk crumina-module crumina-heading heading--h1  heading--with-decoration winster-header">
               <h2 className=" heading-title f-size-90 weight-normal no-margin">Winster<br/>
                 <span className="weight-bold">Trade</span></h2>
-              <h3 className="c-primary">Investment solutions</h3>
+              <h3 className="c-primary">Investment</h3>
             </header>
         
           </div>
@@ -791,8 +791,8 @@ canvasClassName='particle-canvas'
           <div style={{}} className="col-lg-6 col-md-12 col-sm-12 col-xs-6">
             <header style={{}} className="heading-talk crumina-module crumina-heading heading--h1  heading--with-decoration winster-header">
               <h2 className=" heading-title f-size-90 weight-normal no-margin">Winster<br/>
-                <span className="weight-bold">Trade</span></h2>
-              <h3 className="c-primary">Investment solutions</h3>
+                <span style={{}} className="weight-bold">Trade</span></h2>
+              <h3 className="c-primary">Investment</h3>
             </header>
         
           </div>

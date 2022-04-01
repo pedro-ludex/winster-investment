@@ -95,7 +95,7 @@ Opening an account is quick and easy. Learn more about how you can start earning
             <Divider variant='middle' style={{backgroundColor:'#ffab00',height:3,opacity:0.7,width:'80%'}} />
           </Grid>
           <Grid style={{}} className='earn-grid'  direction='row' container justify='center'>
-            <Grid style={{}} justify='center' container xs={12} md={4}>
+            <Grid style={{}} justify='center' container xs={12} md={3}>
                <Grid xs={12} md={12}>
                <h6 style={{textAlign:'center'}}>
                   EARN UP TO
@@ -111,10 +111,10 @@ Opening an account is quick and easy. Learn more about how you can start earning
                 </h6>
             </Grid>
 
-            <Grid style={{}} justify='flex-end' container xs={12} md={6}>
-              <Grid style={{}} spacing={5} container direction='row' >
-                  <Grid style={{}} container md={4} xs={4} justify='center' alignItems='center'>
-                  <div  style={{width:80,height:80}}>
+            <Grid style={{}} justify='flex-end' container xs={12} md={9}>
+              <Grid style={{}} spacing={2} container direction='row' >
+                  <Grid style={{}} container md={4} xs={5} justify='center' alignItems='center'>
+                  <div  style={{width:65,height:65}}>
               <CircularProgressbarWithChildren
           
           styles={buildStyles({
@@ -158,7 +158,7 @@ Opening an account is quick and easy. Learn more about how you can start earning
                   </Grid>
 
 
-                  <Grid style={{}} xs={8} md={8} alignItems='flex-end' container>
+                  <Grid className='pay-con' style={{}} xs={8} md={7} alignItems='flex-end' container>
                   <p style={{color:'white',marginTop:20,fontSize:18}}>
   Get 7.5% bonus for funds kept in your wallet for over 60 days
 </p>
@@ -174,7 +174,7 @@ Opening an account is quick and easy. Learn more about how you can start earning
 
               <Grid container direction='row' >
                   <Grid alignItems='center' justify='center' container md={4} xs={4}>
-                  <div  style={{width:80,height:80}}>
+                  <div  style={{width:65,height:65}}>
               <CircularProgressbarWithChildren
           
           styles={buildStyles({
@@ -217,7 +217,7 @@ Opening an account is quick and easy. Learn more about how you can start earning
                   </Grid>
 
 
-                  <Grid alignItems='center' xs={8} md={8} container>
+                  <Grid alignItems='center' xs={8} md={7} container>
                   <p style={{color:'white',marginTop:20,fontSize:18}}>
   Get 10.5% bonus for funds kept in your wallet for 45 days with a balance above $10000
 </p>
