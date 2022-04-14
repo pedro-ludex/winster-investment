@@ -26,7 +26,7 @@ const Testimonials = () => {
     return (
         <div className='testimonials' style={{margin:60}}>
             <h4 style={{textAlign:'center',marginBottom:80}}>
-              Top rated investors of <span style={{color:'#ffab00'}}>October</span>
+              Top rated investors of last month
             </h4>
             <Grid direction='row' container justify='center' alignItems>
                 <Grid className='testimonial-grid' style={{zIndex:1000}} container justify='center' alignItems xs={12} md={3} >
