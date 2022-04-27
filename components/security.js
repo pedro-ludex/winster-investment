@@ -73,10 +73,10 @@ const Security = () => {
 
 
             
-            <p style={{textAlign:'center',fontSize:16,marginTop:20}}>
+            {/* <p style={{textAlign:'center',fontSize:16,marginTop:20}}>
                 They help make your interests more secure in the palm of your hands and elsewhere
-            </p>
-            <Grid style={{marginTop:70}} container direction justify='center' alignItems='center'>
+            </p> */}
+            {/* <Grid style={{marginTop:70}} container direction justify='center' alignItems='center'>
                 <Grid style={{padding:20}} xs={6} md={2} justify='center' alignContent='center'>
                     <div style={{display:'grid',placeItems:'center'}}>
                     <Image layout='intrinsic' width={200} height={100} style={{}} src={thawte} />
@@ -99,8 +99,8 @@ const Security = () => {
                     </div>
                 </Grid>
                 
-            </Grid>
-            <Grid style={{backgroundSize:'cover',backgroundRepeat:'no-repeat'}} className='' direction='row' container justify='center' alignItems='center'>
+            </Grid> */}
+            {/* <Grid style={{backgroundSize:'cover',backgroundRepeat:'no-repeat'}} className='' direction='row' container justify='center' alignItems='center'>
                
                 <Grid container justify='center' xs={12} md={12}>
                 <p className='heading-text' style={{textAlign:'center',fontSize:16,padding:20}}>
@@ -118,7 +118,7 @@ const Security = () => {
                    <Image  src={bsi} width={500} height={700} layout='intrinsic' />
                    </Paper>
                 </Grid>
-            </Grid>
+            </Grid> */}
             
         </div>
     )

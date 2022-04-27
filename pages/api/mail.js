@@ -169,7 +169,7 @@ const Mail = async (req,res)=> {
             </div>
             <div style="text-align: center;">
                 <p>
-                    Dear ${req.body.user.name} you have successfuly registered with Winster trade investment please click the link bellow to complete your registration
+                    Dear ${req.body.user.firstName} you have successfuly registered with Winster trade investment please click the link bellow to complete your registration
                 </p>
             </div>
             <div style="width: 100%;display: flex; justify-content: center;margin-top: 50px;" >

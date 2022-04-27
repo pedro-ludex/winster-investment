@@ -5,21 +5,30 @@ import Cookie from 'js-cookie'
 import {HashLoader,RingLoader,PulseLoader,PropagateLoader,MoonLoader,PuffLoader} from  "react-spinners";
 import Router from 'next/router'
 import Check from '@material-ui/icons/Check'
-import MyFooter from '../components/myFooter'
+import MyFooter from '../../components/myFooter'
 import PhoneIcon from '@material-ui/icons/Phone'
 import EmailIcon from '@material-ui/icons/Email'
-import Header from '../components/Header'
-import HeaderLinks from '../components/HeaderLinks'
+import Header from '../../components/Header'
+import HeaderLinks from '../../components/HeaderLinks'
 import Menu from "@material-ui/icons/Menu";
-import white from '../img/black.png'
+import white from '../../img/black.png'
 import AddressIcon from '@material-ui/icons/LocationCity'
 import Image from 'next/image'
+import {useRouter} from 'next/router'
 
 const Success = () => {
     const [loading,setLoading]=useState({
         pending:false,
         done:false
     })
+
+    const Router=useRouter()
+
+    const {slug}=Router.query
+
+    // if(!slug){
+    //     return;
+    // }
 
     const mail=()=>{
         setLoading({
@@ -88,7 +97,7 @@ const Success = () => {
                        </span> : !loading.pending && loading.done ? <Check style={{width:35,height:35,color:'#ffab00',marginBottom:-7}} /> : null }
                    </p>
                    <p style={{textAlign:'center',color:'white',marginTop:10}}>
-                      Or go directly to your <Button onClick={()=>{Router.push('./dashboard')}} style={{color:'#ffab00'}}>Dashboard</Button>
+                      Or go directly to your <Button onClick={()=>{Router.push(`./dashboard/${slug}`)}} style={{color:'#ffab00'}}>Dashboard</Button>
                    </p>
                 </CardContent>
             </Card>

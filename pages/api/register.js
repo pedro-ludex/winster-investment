@@ -17,8 +17,9 @@ const Register = async (req, res) => {
       
       email:req.body.user.email,
       password:req.body.user.password,
-      name:req.body.user.name,
-     
+      //name:req.body.user.name,
+      firstname:req.body.user.firstName,
+      lastname:req.body.user.lastName,
       balance:req.body.user.balance,
       username:req.body.user.username,
       bomber:req.body.user.bomber || '',

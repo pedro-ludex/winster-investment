@@ -71,26 +71,26 @@ import Table from 'rc-table'
 import { CryptoCurrencyMarket } from "react-ts-tradingview-widgets";
 
 
-import tetherIcon from '../img/teth.svg'
+import tetherIcon from '../../img/teth.svg'
 // import {
 //     chartExample1,
 //     chartExample2,
 //     chartExample3,
 //     chartExample4,
 // } from '../variables/charts'
-import safemoon from '../img/safemoon.svg'
-import btcIcon from '../img/bitcoin.svg'
-import ethIcon from '../img/eth.svg'
+import safemoon from '../../img/safemoon.svg'
+import btcIcon from '../../img/bitcoin.svg'
+import ethIcon from '../../img/eth.svg'
 
-import black from '../img/black.png'
+import black from '../../img/black.png'
 import AlertIcon from '@material-ui/icons/NotificationImportantOutlined'
 import NotificationsNone from '@material-ui/icons/NotificationsActiveRounded'
 
 import Head from 'next/head'
-import MyFooter from '../components/myFooter'
+import MyFooter from '../../components/myFooter'
 import {MiniChart} from 'react-ts-tradingview-widgets'
 
-import balance from '../img/crypto.svg'
+import balance from '../../img/crypto.svg'
 import { CircularProgressbarWithChildren,buildStyles } from 'react-circular-progressbar';
 import Divider from '@material-ui/core/Divider'
 
@@ -98,8 +98,8 @@ import { AdvancedRealTimeChart } from "react-ts-tradingview-widgets";
 import CreditCard from '@material-ui/icons/CreditCard'
 import {useRouter} from 'next/router'
 import Modal from '@material-ui/core/Modal'
-import litecoin from '../img/litecoin.svg'
-
+import litecoin from '../../img/litecoin.svg'
+//import useRouter from 'next/router'
 
 
 
@@ -144,9 +144,11 @@ const Dashboard=({data})=>{
     
     const [action,setAction]=useState('confirm')
 
-    const Router=useRouter()
 
     const [anchorEl, setAnchorEl] = React.useState(null);
+
+    const Router=useRouter()
+    const {slug}=Router.query
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -164,7 +166,10 @@ const Dashboard=({data})=>{
     let width=window.innerWidth
     let user=Cookie.getJSON('user')
     setContent('Balance')
-    //console.log(name)
+      
+    if(!slug){
+      return;
+    }
     if(width<500){
       setMobile(false)
       console.log('mobile view')
@@ -178,7 +183,7 @@ const Dashboard=({data})=>{
     getInfo()
    
 
-    },[])
+    },[slug])
 
 
     const scrollTop=()=>{
@@ -187,10 +192,7 @@ const Dashboard=({data})=>{
 
     
     const getInfo=()=>{
-      let person=Cookie.get('user')
-      let raw=JSON.parse(person)  
-      const mail=raw.email
-        axios.post('/api/info',{mail})
+        axios.post('/api/info',{slug})
         .then((res)=>{
             //console.log(res.data)
             //let item=JSON.parse(res.data)

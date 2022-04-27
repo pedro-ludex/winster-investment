@@ -7,6 +7,15 @@ var user = new Schema({
     type: String,
     required: false
   },
+  firstname:{
+    type:String,
+    required:false
+  },
+  lastname:{
+    type:String,
+    required:false
+  }
+  ,
  
   email: {
     type:String,

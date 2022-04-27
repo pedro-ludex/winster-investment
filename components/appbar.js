@@ -101,7 +101,8 @@ export default function Header(props) {
       </a>
       <a
       style={{}}
-        href="/login"
+        onClick={props.login}
+        href="#"
         color="transparent"
         //target="_blank"
         className='nav-link'
@@ -110,7 +111,8 @@ export default function Header(props) {
       </a>
       <a
       style={{}}
-        href="../signup"
+        href="#"
+        onClick={props.signup}
         color="transparent"
         //target="_blank"
         className='nav-link'
