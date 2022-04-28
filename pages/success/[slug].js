@@ -97,7 +97,7 @@ const Success = () => {
                        </span> : !loading.pending && loading.done ? <Check style={{width:35,height:35,color:'#ffab00',marginBottom:-7}} /> : null }
                    </p>
                    <p style={{textAlign:'center',color:'white',marginTop:10}}>
-                      Or go directly to your <Button onClick={()=>{Router.push(`./dashboard/${slug}`)}} style={{color:'#ffab00'}}>Dashboard</Button>
+                      Or go directly to your <Button onClick={()=>{Router.push(`../dashboard/${slug}`)}} style={{color:'#ffab00'}}>Dashboard</Button>
                    </p>
                 </CardContent>
             </Card>

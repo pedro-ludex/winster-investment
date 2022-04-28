@@ -73,7 +73,7 @@ const Plans = (props) => {
               </div>
             </li>
           </ul>
-          <a onClick={()=>{Router.push(`/signup/${props.bomber}`)}} className="btn btn--larg btn--gree-light btn--transparent">Join now</a>
+          {/* <a onClick={()=>{Router.push(`/signup/${props.bomber}`)}} className="btn btn--larg btn--gree-light btn--transparent">Join now</a> */}
         </div>
       </div>
       <div style={{padding:40}} className="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30" data-mh="pricing-item">
@@ -106,7 +106,7 @@ const Plans = (props) => {
               </div>
             </li>
           </ul>
-          <a onClick={()=>{Router.push(`/signup/${props.bomber}`)}} className="btn btn--larg btn--gree-light btn--transparent">Join now</a>
+          {/* <a onClick={()=>{Router.push(`/signup/${props.bomber}`)}} className="btn btn--larg btn--gree-light btn--transparent">Join now</a> */}
         </div>
       </div>
 
@@ -142,7 +142,7 @@ const Plans = (props) => {
               </div>
             </li>
           </ul>
-          <a onClick={()=>{Router.push(`/signup/${props.bomber}`)}} className="btn btn--larg btn--gree-light btn--transparent">Join now</a>
+          {/* <a onClick={()=>{Router.push(`/signup/${props.bomber}`)}} className="btn btn--larg btn--gree-light btn--transparent">Join now</a> */}
         </div>
       </div>
       <div style={{padding:40}} className="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30" data-mh="pricing-item">
@@ -175,7 +175,7 @@ const Plans = (props) => {
               </div>
             </li>
           </ul>
-          <a onClick={()=>{Router.push(`/signup/${props.bomber}`)}} className="btn btn--larg btn--gree-light btn--transparent">Join now</a>
+          {/* <a onClick={()=>{Router.push(`/signup/${props.bomber}`)}} className="btn btn--larg btn--gree-light btn--transparent">Join now</a> */}
         </div>
       </div>
     </div>

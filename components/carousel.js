@@ -18,7 +18,7 @@ import CreditCardIcon from '@material-ui/icons/CreditCard';
 
 
 
-const Carousel=()=>{
+const Carousel=(props)=>{
 
   const percentage=66
   return (
@@ -35,7 +35,7 @@ Winster clients using the WIA earn compound interest in crypto, significantly in
 Opening an account is quick and easy. Learn more about how you can start earning interest or refer your friends by exploring our Resource Center.
               </div>
               <Grid style={{marginTop:30,marginBottom:10}} container justify='center'>
-          <a data-scroll href="/signup" className="btn btn--large btn--transparent btn--secondary">Get started</a>
+          <a data-scroll href="#" onClick={props.toggle} className="btn btn--large btn--transparent btn--secondary">Get started</a>
           </Grid>
             </header>
         </Grid>

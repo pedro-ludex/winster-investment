@@ -15,6 +15,11 @@ const userInfo = async(req, res) => {
       //console.log(item)
       res.send(item)
     })
+    .catch((err)=>{
+      if(err){
+        res.send('mongo wahala')
+      }
+    })
 
 
 }

@@ -129,7 +129,7 @@ const Home = () => {
   }
 
   const toggleSignup=()=>{
-    login ? setSignup(false):setSignup(true)
+    signup ? setSignup(false):setSignup(true)
   }
 
   const getday=()=>{
@@ -277,7 +277,7 @@ s0.parentNode.insertBefore(s1,s0);
 
     </section>
     <Grid style={{marginTop:30,marginBottom:10,zIndex:1500}} container justify='center'>
-          <a data-scroll href="/signup" className="btn btn--large btn--transparent btn--secondary">Get started</a>
+          <a data-scroll href="#" onClick={toggleSignup} className="btn btn--large btn--transparent btn--secondary">Get started</a>
           
           </Grid>
           </div>
@@ -379,7 +379,7 @@ s0.parentNode.insertBefore(s1,s0);
             </div>
             <div>
              <Fade bottom>
-             <Carousel />
+             <Carousel toggle={toggleSignup} />
              </Fade>
             </div>
            
@@ -559,7 +559,8 @@ s0.parentNode.insertBefore(s1,s0);
   <Grid style={{marginTop:-60}}>
     <Modal 
     //onClose={()=>{setLogin(false)}}
-    open={true}>
+    style={{}}
+    open={signup}>
       <Signup signup={toggleSignup} />
     </Modal>
   </Grid>

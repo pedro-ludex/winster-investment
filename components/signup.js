@@ -196,7 +196,7 @@ const Signup=(props)=> {
              <h4 className='reg-header'  style={{marginTop:10,textAlign:'center'}}>
               <span style={{color:'#ffab00',textAlign:'center'}}>Register</span> for an account
              </h4>
-        <IconButton onClick={props.signup} style={{position:'absolute',right:0,top:0}}>
+        <IconButton className='signup-close-button' onClick={props.signup} style={{position:'absolute',right:0,top:0}}>
         <Close style={{color:'#ffab00',width:40,height:40}} />
         </IconButton>
         </Grid>
@@ -327,11 +327,7 @@ const Signup=(props)=> {
                    </Grid>
      
                          </Grid>
-             {/* <div style={{backgroundColor:'blue'}}>
-             <CountryDropdown
-               value={country}
-               onChange={(val) =>setCountry(val)} />
-             </div> */}
+            
      
              <Grid className='second-sign' justify='center' alignItems='center' style={{}} container direction='row' >
              <Grid xs={12} md={6} style={{paddingRight:15}} justify='center' alignItems='center' container>
@@ -371,7 +367,7 @@ const Signup=(props)=> {
                style={{}}
                inputComponent={()=>(
                  <CountryDropdown
-                 style={{width:200,height:50,textAlign:'center',backgroundColor:'black',color:'white',border:'2px solid #ffab00',}}
+                 style={{height:50,textAlign:'center',backgroundColor:'black',color:'white',border:'2px solid #ffab00',}}
                  value={values.country}
                  onChange={handleChange('country')} />
                )}
@@ -385,7 +381,7 @@ const Signup=(props)=> {
                  <Grid xs={12} md={6} style={{paddingRight:15}} justify='center' alignItems='center' container>
                     
                    <Input
-             className='app-input username-input'
+             className='app-input '
              style={{color:'white',}}
              placeholder='Username'
                id=""
@@ -404,9 +400,9 @@ const Signup=(props)=> {
              />
                    
                  </Grid>
-                 <Grid xs={12} md={6} style={{paddingRight:15}} justify='center' alignItems='center' container>
+                 <Grid className='password-input' xs={12} md={6} style={{paddingRight:15,}} justify='center' alignItems='center' container>
                  <Input
-             className='app-input'
+             className='app-input '
              style={{color:'white'}}
              placeholder='Password'
                id="input-with-icon-adornment"
@@ -432,31 +428,24 @@ const Signup=(props)=> {
                  {showEye()}
                </Grid>
                  <div style={{color:'white'}}>
-                 {/* <FormControlLabel
-                 style={{color:'white',marginTop:-20}}
-                 color='primary'
-               value="bottom"
-               control={<Checkbox   style={{color:'white'}} color="default" />}
-               label="I have read and agreed to the terms of service and privacy policy"
-               labelPlacement="right"
-             /> */}
+
              <p style={{marginTop:10,textAlign:'center'}}>
              I have read and agreed to the terms of service and privacy policy
              </p>
                  </div>
                  
-                 <Grid container direction='row'>
-                 <Grid xs={12} md={6} container justify='center' alignItems='center' style={{height:60}}>
+                 <Grid className='signup-confirmation' container direction='row'>
+                 <Grid className='captcha-container' xs={12} md={6} container justify='center' alignItems='center' style={{height:60,width:100}}>
                  <ReCAPTCHA
          sitekey="6LcOQiEcAAAAAPPTvimnnC2RY0W6YgY5iuCrSlYp"
          onChange={()=>{setCaptcha(true)}}
          theme='dark'
-         onErrored={()=>alert('cannot contact recaptcha please check your network connection and refresh the page')}
+         onErrored={()=>alert('cannot contact recaptcha please check your network connection and try again')}
          style={{height:60}}
        />
                  
                  </Grid>
-                 <Grid xs={12} md={6} container style={{}} justify='center' alignItems='center' container style={{display:'grid',placeItems:'center',
+                 <Grid className='signup-button' xs={12} md={6} container style={{}} justify='center' alignItems='center' container style={{display:'grid',placeItems:'center',
                  marginTop:40}}>
                    {!loading.pending && !loading.done && captcha ?     <div>
                <Button style={{color:'#ffab00',border:"solid #ffba00",width:90,height:60,}} onClick={handleSubmit} >
