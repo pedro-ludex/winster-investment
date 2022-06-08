@@ -106,9 +106,7 @@ const Home = () => {
 
   useEffect(()=>{
     let width=window.innerWidth
-    //let user=Cookie.getJSON('user')
-    //console.log(JSON.stringify(slug))
-    //console.log(name)
+    
     if(width<500){
       setMobile(true)
       console.log('mobile view')

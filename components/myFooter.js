@@ -47,7 +47,16 @@ function MyFooter(props) {
           icon: (
             <EmailIcon style={{color:'#9a7801',width:25,height:25}} />
           ),
-         title:' E-mail: winsterinvest@winster.com',
+         title:' E-mail: info@winster.com',
+          
+          openExternal: false,
+          className:'main-footer',
+        },
+        {
+          icon: (
+            <EmailIcon style={{color:'#9a7801',width:25,height:25}} />
+          ),
+         title:' E-mail: winsterinvest@gmail.com',
           
           openExternal: false,
           className:'main-footer',
@@ -57,6 +66,15 @@ function MyFooter(props) {
             <AddressIcon style={{color:'#9a7801',width:25,height:25}} />
           ),
          title:'Address: 63 kenton Road, Yorkshire, England',
+         
+          openExternal: false,
+          className:'main-footer',
+        },
+        {
+          icon: (
+            <AddressIcon style={{color:'#9a7801',width:25,height:25}} />
+          ),
+         title:'Address: 6 Havik street, Rotterdam, Nestherland',
          
           openExternal: false,
           className:'main-footer',
